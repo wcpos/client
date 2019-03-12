@@ -8,6 +8,7 @@ $ git clone --recurse-submodules https://github.com/wcpos/client
 ### Submodules
 ```sh
 git submodule foreach 'git add .'
+git submodule foreach 'git commit -m "update"'
 git push --recurse-submodules=on-demand
 ```
 

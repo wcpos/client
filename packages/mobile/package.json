@@ -14,10 +14,10 @@
     "postversion": "react-native-version --never-amend"
   },
   "dependencies": {
-    "react-native": "0.59.0-rc.3"
+    "react-native": "0.59.0"
   },
   "devDependencies": {
-    "@types/react-native": "0.57.38",
+    "@types/react-native": "0.57.39",
     "metro-react-native-babel-preset": "0.53.0",
     "react-native-version": "^2.6.8"
   },
