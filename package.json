@@ -43,11 +43,5 @@
     "jest": "23.6.0",
     "prettier": "1.16.4",
     "shx": "^0.3.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "git submodule foreach 'git add .'; git submodule foreach 'git diff-index --quiet HEAD' || git submodule foreach 'git commit -m \"update\"'",
-      "pre-push": "git push --recurse-submodules=on-demand"
-    }
   }
 }
