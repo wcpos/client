@@ -1,4 +1,4 @@
-package dev.kilbot.boilerplate;
+package com.wcpos.client;
 
 import android.app.Application;
 

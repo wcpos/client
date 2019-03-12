@@ -1,11 +1,11 @@
 import { AppRegistry } from 'react-native-web';
-import App from '@boilerplate/common/src/app';
+import App from '@wcpos/common/src/app';
 
 import './index.css';
 
 // register the app
-AppRegistry.registerComponent('boilerplate', () => App);
+AppRegistry.registerComponent('wcpos', () => App);
 
-AppRegistry.runApplication('boilerplate', {
+AppRegistry.runApplication('wcpos', {
 	rootTag: document.getElementById('root'),
 });

@@ -1,9 +1,9 @@
 {
-  "name": "@boilerplate/desktop",
+  "name": "@wcpos/desktop",
   "description": "Universal React App playground",
   "version": "0.0.1",
   "main": "dist/index.js",
-  "repository": "https://github.com/kilbot/boilerplate",
+  "repository": "https://github.com/wcpos/client",
   "private": true,
   "author": "kilbot",
   "scripts": {
@@ -25,15 +25,15 @@
     "electron-is-dev": "1.0.1"
   },
   "build": {
-    "appId": "dev.kilbot.boilerplate",
-    "productName": "Boilerplate",
+    "appId": "com.wcpos.client",
+    "productName": "wcpos",
     "extends": null,
     "directories": {
       "buildResources": "assets",
       "output": "build"
     },
     "extraMetadata": {
-      "name": "boilerplate"
+      "name": "wcpos"
     },
     "linux": {
       "icon": "icons/icon.png"
@@ -51,9 +51,9 @@
     ],
     "protocols": [
       {
-        "name": "Boilerplate",
+        "name": "wcpos",
         "schemes": [
-          "boilerplate"
+          "wcpos"
         ]
       }
     ],

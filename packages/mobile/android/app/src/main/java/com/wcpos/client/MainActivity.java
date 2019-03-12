@@ -1,4 +1,4 @@
-package dev.kilbot.boilerplate;
+package com.wcpos.client;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "boilerplate";
+        return "wcpos";
     }
 }

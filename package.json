@@ -1,8 +1,8 @@
 {
-  "name": "boilerplate",
+  "name": "wcpos",
   "version": "0.0.1",
   "main": "packages/web/src/index.tsx",
-  "repository": "https://github.com/kilbot/boilerplate",
+  "repository": "https://github.com/wcpos/client",
   "author": "kilbot",
   "license": "MIT",
   "private": true,
@@ -11,18 +11,18 @@
       "packages/*"
     ],
     "nohoist": [
-      "@boilerplate/mobile/react-native",
-      "@boilerplate/mobile/react-native/**",
-      "@boilerplate/mobile/react-native-*",
-      "@boilerplate/mobile/react-native-*/**"
+      "@wcpos/mobile/react-native",
+      "@wcpos/mobile/react-native/**",
+      "@wcpos/mobile/react-native-*",
+      "@wcpos/mobile/react-native-*/**"
     ]
   },
   "scripts": {
-    "dev:web": "yarn workspace @boilerplate/web start",
-    "dev:desktop": "yarn workspace @boilerplate/desktop start",
-    "dev:mobile": "yarn workspace @boilerplate/mobile start",
+    "dev:web": "yarn workspace @wcpos/web start",
+    "dev:desktop": "yarn workspace @wcpos/desktop start",
+    "dev:mobile": "yarn workspace @wcpos/mobile start",
     "clean": "yarn workspaces run clean && yarn cache clean && shx rm -rf yarn.lock && rm -rf node_modules",
-    "version": "yarn workspaces run version --no-git-tag-version --new-version $npm_package_version && yarn workspace @boilerplate/mobile postversion",
+    "version": "yarn workspaces run version --no-git-tag-version --new-version $npm_package_version && yarn workspace @wcpos/mobile postversion",
     "postversion": "git push --tags && yarn publish . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\""
   },
   "devDependencies": {
@@ -39,6 +39,7 @@
     "eslint-plugin-react": "7.12.4",
     "eslint-plugin-react-hooks": "1.4.0",
     "eslint-plugin-react-native": "3.6.0",
+    "husky": "^1.3.1",
     "jest": "23.6.0",
     "prettier": "1.16.4",
     "shx": "^0.3.2"
