@@ -7,6 +7,7 @@ module.exports = {
 		'@typescript-eslint/indent': ['error', 'tab'],
 		'@typescript-eslint/explicit-function-return-type': 'off',
 		'@typescript-eslint/prefer-interface': 'off',
+		'@typescript-eslint/explicit-member-accessibility': 'off',
 		'react-hooks/rules-of-hooks': 'error',
 		'react-hooks/exhaustive-deps': 'warn',
 	},

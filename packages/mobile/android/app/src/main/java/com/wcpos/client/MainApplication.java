@@ -10,6 +10,9 @@ import com.facebook.soloader.SoLoader;
 
 import com.nozbe.watermelondb.WatermelonDBPackage;
 
+import com.swmansion.reanimated.ReanimatedPackage;
+import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -25,7 +28,9 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
         new MainReactPackage(),
-        new WatermelonDBPackage()
+        new WatermelonDBPackage(),
+        new ReanimatedPackage(),
+        new RNGestureHandlerPackage()
       );
     }
 
