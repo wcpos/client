@@ -14,7 +14,9 @@
       "@wcpos/mobile/react-native",
       "@wcpos/mobile/react-native/**",
       "@wcpos/mobile/react-native-*",
-      "@wcpos/mobile/react-native-*/**"
+      "@wcpos/mobile/react-native-*/**",
+      "@wcpos/mobile/@nozbe/watermelondb",
+      "@wcpos/mobile/@nozbe/watermelondb/**"
     ]
   },
   "scripts": {
@@ -26,6 +28,7 @@
     "postversion": "git push --tags && yarn publish . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\""
   },
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.3.0",
     "@typescript-eslint/eslint-plugin": "1.4.2",
     "@typescript-eslint/parser": "1.4.2",
     "babel-eslint": "9.0.0",
