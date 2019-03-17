@@ -15,14 +15,13 @@
   },
   "dependencies": {
     "@nozbe/watermelondb": "0.11.0",
-    "react-native": "0.59.0",
-    "react-native-reanimated": "1.0.0-alpha.12"
+    "react-native": "0.59.1",
+    "react-native-gesture-handler": "^1.1.0"
   },
   "devDependencies": {
     "@types/react-native": "0.57.40",
-    "metro-react-native-babel-preset": "0.53.0",
-    "react-native-gesture-handler": "1.1.0",
-    "react-native-version": "2.6.8"
+    "metro-react-native-babel-preset": "0.53.1",
+    "react-native-version": "2.7.0"
   },
   "jest": {
     "preset": "react-native",

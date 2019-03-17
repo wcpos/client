@@ -15,9 +15,17 @@ module.exports = {
 		]),
 		extraNodeModules: {
 			'react-native': path.resolve(__dirname, 'node_modules/react-native'),
-			'react-native-reanimated': path.resolve(__dirname, 'node_modules/react-native-reanimated'),
+			// 'react-native-reanimated': path.resolve(__dirname, 'node_modules/react-native-reanimated'),
 		},
 		// bundle .ios.tsx, .android.tsx and .native.tsx
 		// platforms: ['native'],
+	},
+	transformer: {
+		getTransformOptions: async () => ({
+			transform: {
+				experimentalImportSupport: false,
+				inlineRequires: false,
+			},
+		}),
 	},
 };
