@@ -11,21 +11,21 @@
     "clean": "shx rm -rf dist && rm -rf node_modules"
   },
   "dependencies": {
-    "react": "16.8.4",
-    "react-art": "16.8.4",
-    "react-dom": "16.8.4",
-    "react-native-web": "0.11.1",
+    "react": "16.8.5",
+    "react-art": "16.8.5",
+    "react-dom": "16.8.5",
+    "react-native-web": "0.11.2",
     "worker-loader": "2.0.0"
   },
   "devDependencies": {
     "@types/jest": "24.0.11",
-    "@types/node": "11.11.3",
+    "@types/node": "11.11.6",
     "@types/react": "16.8.8",
-    "@types/react-dom": "16.8.2",
+    "@types/react-dom": "16.8.3",
     "customize-cra": "0.2.12",
     "react-app-rewired": "2.1.1",
     "react-scripts": "2.1.8",
-    "typescript": "3.3.3333"
+    "typescript": "3.3.4000"
   },
   "eslintConfig": {
     "extends": "react-app"

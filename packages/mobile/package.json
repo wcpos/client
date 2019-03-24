@@ -17,7 +17,7 @@
     "@nozbe/watermelondb": "0.12.0",
     "react-native": "0.59.1",
     "react-native-gesture-handler": "^1.1.0",
-    "react-native-splash-screen": "^3.2.0"
+    "react-native-splash-screen": "3.2.0"
   },
   "devDependencies": {
     "@types/react-native": "0.57.41",

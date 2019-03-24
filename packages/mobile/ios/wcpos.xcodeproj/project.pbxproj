@@ -368,6 +368,7 @@
 		6190FEB4222C2CEB00A31804 /* wcpos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wcpos-Bridging-Header.h"; sourceTree = "<group>"; };
 		6190FEB5222C2CEC00A31804 /* Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift.swift; sourceTree = "<group>"; };
 		61BDEE90223F721A002917CE /* WooCommercePOS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = WooCommercePOS.ttf; path = ../../common/src/fonts/WooCommercePOS.ttf; sourceTree = "<group>"; };
+		61C12EC022477605001E1AC0 /* wcpos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = wcpos.entitlements; path = wcpos/wcpos.entitlements; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8737E0BA27184EC49318C248 /* libRNGestureHandler.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNGestureHandler.a; sourceTree = "<group>"; };
@@ -451,6 +452,7 @@
 		13B07FAE1A68108700A75B9A /* wcpos */ = {
 			isa = PBXGroup;
 			children = (
+				61C12EC022477605001E1AC0 /* wcpos.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -771,6 +773,11 @@
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = G7L8G4KJ7A;
 						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1354,6 +1361,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = wcpos/wcpos.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = G7L8G4KJ7A;
@@ -1385,6 +1393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = wcpos/wcpos.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G7L8G4KJ7A;
 				HEADER_SEARCH_PATHS = (

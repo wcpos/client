@@ -13,17 +13,17 @@
     "@storybook/addon-info": "5.0.3",
     "@storybook/addon-knobs": "5.0.3",
     "@storybook/react": "5.0.3",
-    "react": "16.8.4",
-    "react-dom": "16.8.4"
+    "react": "16.8.5",
+    "react-dom": "16.8.5"
   },
   "devDependencies": {
     "@babel/core": "7.4.0",
-    "@types/storybook__addon-actions": "^3.4.2",
-    "@types/storybook__addon-info": "^4.1.1",
-    "@types/storybook__addon-knobs": "^4.0.4",
-    "@types/storybook__react": "^4.0.1",
+    "@types/storybook__addon-actions": "3.4.2",
+    "@types/storybook__addon-info": "4.1.1",
+    "@types/storybook__addon-knobs": "4.0.4",
+    "@types/storybook__react": "4.0.1",
     "babel-loader": "8.0.5",
-    "metro-react-native-babel-preset": "^0.53.1",
+    "metro-react-native-babel-preset": "0.53.1",
     "react-scripts": "2.1.8"
   }
 }
