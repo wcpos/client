@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@nozbe/watermelondb": "0.12.0",
-    "react-native": "0.59.1",
+    "react-native": "0.59.2",
     "react-native-gesture-handler": "^1.1.0",
     "react-native-splash-screen": "3.2.0"
   },

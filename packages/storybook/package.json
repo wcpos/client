@@ -1,5 +1,5 @@
 {
-  "name": "@boilerplate/storybook",
+  "name": "@wcpos/storybook",
   "version": "0.0.1",
   "private": true,
   "license": "MIT",
@@ -9,10 +9,10 @@
     "clean": "shx rm -rf dist && rm -rf node_modules"
   },
   "dependencies": {
-    "@storybook/addon-actions": "5.0.3",
-    "@storybook/addon-info": "5.0.3",
-    "@storybook/addon-knobs": "5.0.3",
-    "@storybook/react": "5.0.3",
+    "@storybook/addon-actions": "5.0.5",
+    "@storybook/addon-info": "5.0.5",
+    "@storybook/addon-knobs": "5.0.5",
+    "@storybook/react": "5.0.5",
     "react": "16.8.5",
     "react-dom": "16.8.5"
   },

@@ -23,7 +23,7 @@
     "dev:web": "yarn workspace @wcpos/web start",
     "dev:desktop": "yarn workspace @wcpos/desktop start",
     "dev:mobile": "yarn workspace @wcpos/mobile start",
-    "dev:storybook": "yarn workspace @boilerplate/storybook start",
+    "dev:storybook": "yarn workspace @wcpos/storybook start",
     "clean": "yarn workspaces run clean && yarn cache clean && shx rm -rf yarn.lock && rm -rf node_modules",
     "version": "yarn workspaces run version --no-git-tag-version --new-version $npm_package_version && yarn workspace @wcpos/mobile postversion",
     "postversion": "git push --tags && yarn publish . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\"",
@@ -45,7 +45,7 @@
     "eslint-plugin-react-hooks": "1.6.0",
     "eslint-plugin-react-native": "3.6.0",
     "jest": "24.5.0",
-    "patch-package": "6.0.5",
+    "patch-package": "6.0.7",
     "postinstall-postinstall": "2.0.0",
     "prettier": "1.16.4",
     "shx": "0.3.2"
