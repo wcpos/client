@@ -9,15 +9,12 @@ let mainWindow: Electron.BrowserWindow;
 
 function createWindow() {
 	// Create the browser window.
-	mainWindow = new BrowserWindow({ width: 800, height: 600 });
+	mainWindow = new BrowserWindow({ width: 800, height: 600, title: 'WooCommerce POS' });
 
 	// and load the index.html of the app.
 	mainWindow.loadURL(
 		isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, 'web/index.html')}`
 	);
-
-	// Open the DevTools.
-	mainWindow.webContents.openDevTools();
 
 	// Emitted when the window is closed.
 	mainWindow.on('closed', function() {
@@ -26,6 +23,11 @@ function createWindow() {
 		// when you should delete the corresponding element.
 		// mainWindow = null;
 		mainWindow.destroy();
+	});
+
+	//
+	mainWindow.on('page-title-updated', function(e) {
+		e.preventDefault();
 	});
 }
 

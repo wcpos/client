@@ -1,11 +1,15 @@
 {
   "name": "@wcpos/desktop",
-  "description": "Universal React App playground",
+  "description": "A simple front-end for taking WooCommerce orders at the Point of Sale.",
   "version": "0.0.1",
   "main": "dist/index.js",
   "repository": "https://github.com/wcpos/client",
   "private": true,
-  "author": "kilbot",
+  "author": { 
+    "name" : "kilbot", 
+    "email" : "support@wcpos.com", 
+    "url" : "https://wcpos.com"
+  },
   "scripts": {
     "start": "yarn compile && electron .",
     "clean": "shx rm -rf build && rm -rf dist && rm -rf node_modules",
@@ -26,7 +30,8 @@
   },
   "build": {
     "appId": "com.wcpos.client",
-    "productName": "wcpos",
+    "productName": "WooCommerce POS",
+    "copyright": "Copyright © 2019 ${author}",
     "extends": null,
     "directories": {
       "buildResources": "assets",
@@ -36,14 +41,14 @@
       "name": "wcpos"
     },
     "linux": {
-      "icon": "icons/icon.png"
+      "icon": "icons/app.icns"
     },
     "mac": {
       "category": "public.app-category.developer-tools",
-      "icon": "icons/icon.png"
+      "icon": "icons/app.icns"
     },
     "win": {
-      "icon": "icons/icon.ico"
+      "icon": "icons/app.ico"
     },
     "files": [
       "assets",
