@@ -5,7 +5,7 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "ios": "react-native run-ios --simulator=\"iPad Air 2\"",
+    "ios": "react-native run-ios --simulator=\"iPad 12.1\"",
     "android": "react-native run-android",
     "tsc": "tsc",
     "clean": "shx rm -rf ios/build && rm -rf android/build && rm -rf node_modules && watchman watch-del-all",
@@ -15,12 +15,12 @@
   },
   "dependencies": {
     "@nozbe/watermelondb": "0.12.0",
-    "react-native": "0.59.2",
-    "react-native-gesture-handler": "^1.1.0",
+    "react-native": "0.59.3",
+    "react-native-gesture-handler": "1.1.0",
     "react-native-splash-screen": "3.2.0"
   },
   "devDependencies": {
-    "@types/react-native": "0.57.41",
+    "@types/react-native": "0.57.42",
     "metro-react-native-babel-preset": "0.53.1",
     "react-native-version": "2.7.0"
   },
