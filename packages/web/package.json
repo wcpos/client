@@ -19,8 +19,8 @@
   },
   "devDependencies": {
     "@types/jest": "24.0.12",
-    "@types/node": "11.13.8",
-    "@types/react": "16.8.15",
+    "@types/node": "12.0.0",
+    "@types/react": "16.8.16",
     "@types/react-dom": "16.8.4",
     "customize-cra": "0.2.12",
     "react-app-rewired": "2.1.3",
