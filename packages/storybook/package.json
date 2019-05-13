@@ -22,8 +22,8 @@
     "@types/storybook__addon-info": "4.1.1",
     "@types/storybook__addon-knobs": "5.0.0",
     "@types/storybook__react": "4.0.1",
-    "babel-loader": "8.0.5",
+    "babel-loader": "8.0.6",
     "metro-react-native-babel-preset": "0.54.0",
-    "react-scripts": "3.0.0"
+    "react-scripts": "3.0.1"
   }
 }
