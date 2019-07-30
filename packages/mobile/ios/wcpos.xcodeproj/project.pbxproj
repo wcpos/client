@@ -17,6 +17,7 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* wcposTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* wcposTests.m */; };
 		4EF646BA274036A91C8DC6B6 /* libPods-wcpos-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8A525B6E32AE80F9D05A9C /* libPods-wcpos-tvOS.a */; };
+		617E7E1D22F046600066F153 /* libWatermelonDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 618CDA7A223E634D0051386F /* libWatermelonDB.a */; };
 		6190FEB6222C2CEC00A31804 /* Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6190FEB5222C2CEC00A31804 /* Swift.swift */; };
 		61BDEEB9223F721A002917CE /* WooCommercePOS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 61BDEE90223F721A002917CE /* WooCommercePOS.ttf */; };
 		9C18886D9CD3A332ED26394B /* libPods-wcposTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF03586E1B0C1EA61EEDDCF /* libPods-wcposTests.a */; };
@@ -397,6 +398,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				617E7E1D22F046600066F153 /* libWatermelonDB.a in Frameworks */,
 				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
 				FCFC943074EB78FA64719CD4 /* libPods-wcpos.a in Frameworks */,
 			);

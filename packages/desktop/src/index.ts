@@ -13,7 +13,7 @@ function createWindow() {
 
 	// and load the index.html of the app.
 	mainWindow.loadURL(
-		isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, 'web/index.html')}`
+		isDev ? 'https://localhost:3000' : `file://${path.join(__dirname, 'web/index.html')}`
 	);
 
 	// Emitted when the window is closed.
