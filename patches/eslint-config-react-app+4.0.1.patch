@@ -1,0 +1,22 @@
+diff --git a/node_modules/eslint-config-react-app/index.js b/node_modules/eslint-config-react-app/index.js
+index bc6d0a1..8ea947c 100644
+--- a/node_modules/eslint-config-react-app/index.js
++++ b/node_modules/eslint-config-react-app/index.js
+@@ -52,7 +52,7 @@ module.exports = {
+     },
+   },
+ 
+-  overrides: {
++  overrides: [{
+     files: ['**/*.ts', '**/*.tsx'],
+     parser: '@typescript-eslint/parser',
+     parserOptions: {
+@@ -90,7 +90,7 @@ module.exports = {
+       'no-useless-constructor': 'off',
+       '@typescript-eslint/no-useless-constructor': 'warn',
+     },
+-  },
++  }],
+ 
+   // NOTE: When adding rules here, you need to make sure they are compatible with
+   // `typescript-eslint`, as some rules such as `no-array-constructor` aren't compatible.
