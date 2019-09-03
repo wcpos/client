@@ -3,6 +3,7 @@ package com.wcpos.client;
 import android.app.Application;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+import com.swmansion.reanimated.ReanimatedPackage;
 // import org.devio.rn.splashscreen.SplashScreenReactPackage;
 // import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.facebook.react.ReactNativeHost;
