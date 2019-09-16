@@ -20,10 +20,10 @@
     "react-native-gesture-handler": "1.4.1",
     "react-native-reanimated": "1.2.0",
     "react-native-splash-screen": "3.2.0",
-    "react-native-webview": "7.0.3"
+    "react-native-webview": "7.0.5"
   },
   "devDependencies": {
-    "@types/react-native": "0.60.11",
+    "@types/react-native": "0.60.13",
     "metro-react-native-babel-preset": "0.56.0",
     "react-native-version": "3.1.0"
   },

@@ -30,12 +30,12 @@
     "postinstall": "patch-package"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-decorators": "7.4.4",
-    "@typescript-eslint/eslint-plugin": "2.1.0",
-    "@typescript-eslint/parser": "2.1.0",
+    "@babel/plugin-proposal-decorators": "7.6.0",
+    "@typescript-eslint/eslint-plugin": "2.2.0",
+    "@typescript-eslint/parser": "2.2.0",
     "babel-eslint": "10.0.3",
     "eslint": "6.3.0",
-    "eslint-config-prettier": "6.2.0",
+    "eslint-config-prettier": "6.3.0",
     "eslint-config-react-app": "5.0.1",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-flowtype": "4.3.0",
@@ -45,7 +45,7 @@
     "eslint-plugin-react-hooks": "2.0.1",
     "eslint-plugin-react-native": "3.7.0",
     "jest": "24.9.0",
-    "patch-package": "6.1.2",
+    "patch-package": "6.1.4",
     "postinstall-postinstall": "2.0.0",
     "prettier": "1.18.2",
     "shx": "0.3.2"
