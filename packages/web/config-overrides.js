@@ -1,4 +1,4 @@
-const { override, babelInclude, addDecoratorsLegacy } = require('customize-cra');
+const { override, babelInclude, addDecoratorsLegacy, addBabelPlugins } = require('customize-cra');
 const path = require('path');
 
 const addWorkerLoader = () => config => {
@@ -10,6 +10,10 @@ const addWorkerLoader = () => config => {
 module.exports = override(
 	addWorkerLoader(),
 	addDecoratorsLegacy(),
+	...addBabelPlugins(
+    "@babel/plugin-proposal-optional-chaining",
+    "@babel/plugin-proposal-nullish-coalescing-operator",
+  ),
 	babelInclude([
 		// tell Babel to include common files
 		path.resolve('src'),
