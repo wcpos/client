@@ -23,7 +23,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "electron": "7.1.2",
+    "electron": "7.1.5",
     "electron-builder": "21.2.0",
     "electron-is-dev": "1.1.0"
   },
