@@ -17,13 +17,12 @@
     "@nozbe/watermelondb": "0.15.0",
     "react": "16.12.0",
     "react-native": "0.61.5",
-    "react-native-gesture-handler": "1.5.2",
+    "react-native-gesture-handler": "1.5.3",
     "react-native-reanimated": "1.4.0",
-    "react-native-splash-screen": "3.2.0",
-    "react-native-webview": "8.0.1"
+    "react-native-webview": "8.0.3"
   },
   "devDependencies": {
-    "@types/react-native": "0.60.25",
+    "@types/react-native": "0.60.26",
     "metro-react-native-babel-preset": "0.57.0",
     "react-native-version": "3.2.0"
   },
