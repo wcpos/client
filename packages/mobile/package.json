@@ -19,10 +19,12 @@
     "react-native": "0.61.5",
     "react-native-gesture-handler": "1.5.3",
     "react-native-reanimated": "1.4.0",
+    "react-native-safe-area-context": "0.6.2",
+    "react-native-screens": "2.0.0-alpha.23",
     "react-native-webview": "8.0.3"
   },
   "devDependencies": {
-    "@types/react-native": "0.60.26",
+    "@types/react-native": "0.60.30",
     "metro-react-native-babel-preset": "0.57.0",
     "react-native-version": "3.2.0"
   },
