@@ -5,18 +5,19 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
+    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "noEmit": true,
     "experimentalDecorators": true,
-    "jsx": "preserve",
+    "jsx": "react",
     "lib": [
+      "esnext",
       "dom",
       "dom.iterable",
-      "esnext"
     ]
-  }
+  },
+  // "exclude": ["./node_modules"]
 }

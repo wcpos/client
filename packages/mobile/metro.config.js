@@ -6,6 +6,7 @@ module.exports = {
 	watchFolders: [
 		path.resolve(__dirname, '../../node_modules'),
 		path.resolve(__dirname, '../common'),
+		path.resolve(__dirname, '../storybook'),
 	],
 	resolver: {
 		blacklistRE: blacklist([
@@ -16,6 +17,7 @@ module.exports = {
 		extraNodeModules: {
 			'react-native': path.resolve(__dirname, 'node_modules/react-native'),
 			'react-native-reanimated': path.resolve(__dirname, 'node_modules/react-native-reanimated'),
+			// '@storybook/react': path.resolve(__dirname, '../../node_modules/@storybook/react-native'),
 		},
 		// bundle .ios.tsx, .android.tsx and .native.tsx
 		// platforms: ['native'],
