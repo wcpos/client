@@ -19,6 +19,11 @@
       "@wcpos/mobile/@nozbe/watermelondb/**"
     ]
   },
+  "resolutions": {
+    "**/react": "16.13.0",
+    "**/react-art": "16.13.0",
+    "**/react-dom": "16.13.0"
+  },
   "scripts": {
     "desktop": "yarn --cwd packages/desktop",
     "mobile": "yarn --cwd packages/mobile",
