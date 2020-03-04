@@ -9,7 +9,7 @@ module.exports = {
 		'@typescript-eslint/explicit-member-accessibility': 'off',
 		'@typescript-eslint/camelcase': 'off',
 		'@typescript-eslint/prefer-interface': 'off',
-		'react-hooks/rules-of-hooks': 'error',
+		'react-hooks/rules-of-hooks': 'warn',
 		'react-hooks/exhaustive-deps': 'warn',
 	},
 };

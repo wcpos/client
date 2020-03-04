@@ -5,10 +5,10 @@
   "main": "dist/index.js",
   "repository": "https://github.com/wcpos/client",
   "private": true,
-  "author": { 
-    "name" : "kilbot", 
-    "email" : "support@wcpos.com", 
-    "url" : "https://wcpos.com"
+  "author": {
+    "name": "kilbot",
+    "email": "support@wcpos.com",
+    "url": "https://wcpos.com"
   },
   "scripts": {
     "start": "yarn compile && electron .",
@@ -23,8 +23,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "electron": "8.0.0",
-    "electron-builder": "22.3.2",
+    "electron": "8.0.3",
+    "electron-builder": "22.3.6",
     "electron-is-dev": "1.1.0"
   },
   "build": {
