@@ -1,8 +1,8 @@
 diff --git a/node_modules/@react-navigation/routers/lib/module/DrawerRouter.js b/node_modules/@react-navigation/routers/lib/module/DrawerRouter.js
-index ccf5e17..4a5027c 100644
+index 5214a09..2034f52 100644
 --- a/node_modules/@react-navigation/routers/lib/module/DrawerRouter.js
 +++ b/node_modules/@react-navigation/routers/lib/module/DrawerRouter.js
-@@ -136,4 +136,8 @@ export default function DrawerRouter(options) {
+@@ -133,4 +133,9 @@ export default function DrawerRouter(options) {
      actionCreators: DrawerActions
    });
  }
@@ -10,13 +10,14 @@ index ccf5e17..4a5027c 100644
 +export const DrawerActionType = null;
 +export const DrawerNavigationState = null;
 +export const DrawerRouterOptions = null;
++export const DrawerActionHelpers = null;
  //# sourceMappingURL=DrawerRouter.js.map
 \ No newline at end of file
 diff --git a/node_modules/@react-navigation/routers/lib/module/StackRouter.js b/node_modules/@react-navigation/routers/lib/module/StackRouter.js
-index c4c90d0..a1cdaf4 100644
+index 20121e0..8ba943d 100644
 --- a/node_modules/@react-navigation/routers/lib/module/StackRouter.js
 +++ b/node_modules/@react-navigation/routers/lib/module/StackRouter.js
-@@ -275,4 +275,8 @@ export default function StackRouter(options) {
+@@ -271,4 +271,9 @@ export default function StackRouter(options) {
  
    return router;
  }
@@ -24,13 +25,14 @@ index c4c90d0..a1cdaf4 100644
 +export const StackActionType = null;
 +export const StackNavigationState = null;
 +export const StackRouterOptions = null;
++export const StackActionHelpers = null;
  //# sourceMappingURL=StackRouter.js.map
 \ No newline at end of file
 diff --git a/node_modules/@react-navigation/routers/lib/module/TabRouter.js b/node_modules/@react-navigation/routers/lib/module/TabRouter.js
-index ecbc30b..95fdbb4 100644
+index 4a2553a..3add347 100644
 --- a/node_modules/@react-navigation/routers/lib/module/TabRouter.js
 +++ b/node_modules/@react-navigation/routers/lib/module/TabRouter.js
-@@ -237,4 +237,8 @@ export default function TabRouter(_ref) {
+@@ -232,4 +232,9 @@ export default function TabRouter({
  
    return router;
  }
@@ -38,5 +40,6 @@ index ecbc30b..95fdbb4 100644
 +export const TabActionType = null;
 +export const TabNavigationState = null;
 +export const TabRouterOptions = null;
++export const TabActionHelpers = null;
  //# sourceMappingURL=TabRouter.js.map
 \ No newline at end of file
