@@ -14,7 +14,7 @@ index 5214a09..2034f52 100644
  //# sourceMappingURL=DrawerRouter.js.map
 \ No newline at end of file
 diff --git a/node_modules/@react-navigation/routers/lib/module/StackRouter.js b/node_modules/@react-navigation/routers/lib/module/StackRouter.js
-index 20121e0..8ba943d 100644
+index 8369879..dadc4be 100644
 --- a/node_modules/@react-navigation/routers/lib/module/StackRouter.js
 +++ b/node_modules/@react-navigation/routers/lib/module/StackRouter.js
 @@ -271,4 +271,9 @@ export default function StackRouter(options) {
