@@ -4,6 +4,9 @@
     "src"
   ],
   "compilerOptions": {
-    "isolatedModules": true
+    "isolatedModules": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true
   }
 }

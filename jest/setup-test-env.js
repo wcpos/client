@@ -1,3 +1,4 @@
-// import '@testing-library/jest-dom/extend-expect';
+import '@testing-library/jest-dom/extend-expect';
+// require('@testing-library/jest-dom/extend-expect');
 
 // beforeAll(() => {});

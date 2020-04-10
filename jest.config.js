@@ -81,7 +81,7 @@ module.exports = {
 	// notifyMode: "failure-change",
 
 	// A preset that is used as a base for Jest's configuration
-	// preset: 'ts-jest',
+	preset: 'react-native',
 
 	// Run tests from one or more projects
 	// projects: null,
@@ -120,7 +120,7 @@ module.exports = {
 	// snapshotSerializers: [],
 
 	// The test environment that will be used for testing
-	// testEnvironment: 'node',
+	testEnvironment: 'jsdom',
 
 	// Options that will be passed to the testEnvironment
 	// testEnvironmentOptions: {},
@@ -160,7 +160,7 @@ module.exports = {
 	},
 
 	// An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
-	// transformIgnorePatterns: ['node_modules/(?!(react-native|my-project|react-native-button)/)'],
+	transformIgnorePatterns: ['node_modules/(?!(react-native)/)'],
 
 	// An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
 	// unmockedModulePathPatterns: undefined,
