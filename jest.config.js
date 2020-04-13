@@ -160,7 +160,9 @@ module.exports = {
 	},
 
 	// An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
-	transformIgnorePatterns: ['node_modules/(?!(react-native)/)'],
+	transformIgnorePatterns: [
+		'node_modules/(?!(react-native|react-native-webview|react-native-screens|react-native-gesture-handler|@react-navigation/.*|@react-native-community|react-native-iphone-x-helper|react-native-reanimated)/)',
+	],
 
 	// An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
 	// unmockedModulePathPatterns: undefined,
