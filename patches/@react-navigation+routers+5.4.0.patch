@@ -1,8 +1,8 @@
 diff --git a/node_modules/@react-navigation/routers/lib/module/DrawerRouter.js b/node_modules/@react-navigation/routers/lib/module/DrawerRouter.js
-index 5214a09..2034f52 100644
+index 5c10d2d..27b10d5 100644
 --- a/node_modules/@react-navigation/routers/lib/module/DrawerRouter.js
 +++ b/node_modules/@react-navigation/routers/lib/module/DrawerRouter.js
-@@ -133,4 +133,9 @@ export default function DrawerRouter(options) {
+@@ -153,4 +153,9 @@ export default function DrawerRouter(_ref) {
      actionCreators: DrawerActions
    });
  }
