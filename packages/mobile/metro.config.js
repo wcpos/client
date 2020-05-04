@@ -13,11 +13,12 @@ module.exports = {
 			// prevent react-native conflict in project root or common directory
 			new RegExp(path.resolve(__dirname, '../../node_modules/react-native') + '/.*'),
 			new RegExp(path.resolve(__dirname, '../common/node_modules/react-native') + '/.*'),
+			new RegExp(path.resolve(__dirname, '../../node_modules/@storybook/react') + '/.*'),
 		]),
 		extraNodeModules: {
 			'react-native': path.resolve(__dirname, 'node_modules/react-native'),
 			'react-native-reanimated': path.resolve(__dirname, 'node_modules/react-native-reanimated'),
-			// '@storybook/react': path.resolve(__dirname, '../../node_modules/@storybook/react-native'),
+			'@storybook/react': path.resolve(__dirname, '../../node_modules/@storybook/react-native'),
 		},
 		// bundle .ios.tsx, .android.tsx and .native.tsx
 		// platforms: ['native'],

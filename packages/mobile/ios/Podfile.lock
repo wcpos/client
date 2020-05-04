@@ -1,5 +1,7 @@
 PODS:
   - boost-for-react-native (1.63.0)
+  - BVLinearGradient (2.5.6):
+    - React
   - CocoaAsyncSocket (7.6.4)
   - CocoaLibEvent (1.0.0)
   - DoubleConversion (1.1.6)
@@ -238,7 +240,7 @@ PODS:
   - React-jsinspector (0.63.0-rc.0)
   - react-native-safe-area-context (0.7.3):
     - React
-  - react-native-webview (9.2.2):
+  - react-native-webview (9.4.0):
     - React
   - React-RCTActionSheet (0.63.0-rc.0):
     - React-Core/RCTActionSheetHeaders (= 0.63.0-rc.0)
@@ -304,13 +306,16 @@ PODS:
     - React
   - RNReanimated (1.8.0):
     - React
-  - RNScreens (2.5.0):
+  - RNScreens (2.7.0):
+    - React
+  - RNSVG (12.1.0):
     - React
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
 
 DEPENDENCIES:
+  - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
   - DoubleConversion (from `/Users/kilbot/Projects/wcpos-client/packages/mobile/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `/Users/kilbot/Projects/wcpos-client/packages/mobile/node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `/Users/kilbot/Projects/wcpos-client/packages/mobile/node_modules/react-native/Libraries/FBReactNativeSpec`)
@@ -362,6 +367,7 @@ DEPENDENCIES:
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
+  - RNSVG (from `../node_modules/react-native-svg`)
   - Yoga (from `/Users/kilbot/Projects/wcpos-client/packages/mobile/node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -380,6 +386,8 @@ SPEC REPOS:
     - YogaKit
 
 EXTERNAL SOURCES:
+  BVLinearGradient:
+    :path: "../node_modules/react-native-linear-gradient"
   DoubleConversion:
     :podspec: "/Users/kilbot/Projects/wcpos-client/packages/mobile/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   FBLazyVector:
@@ -440,11 +448,14 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
+  RNSVG:
+    :path: "../node_modules/react-native-svg"
   Yoga:
     :path: "/Users/kilbot/Projects/wcpos-client/packages/mobile/node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   CocoaLibEvent: 2fab71b8bd46dd33ddb959f7928ec5909f838e3f
   DoubleConversion: cde416483dac037923206447da6e1454df403714
@@ -471,7 +482,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 0ca3a8a0a65f9eb9aec3273c4cf44f6d31277937
   React-jsinspector: 09b8cb3fefdf81b2889a13cc1a645e905e514ddb
   react-native-safe-area-context: e200d4433aba6b7e60b52da5f37af11f7a0b0392
-  react-native-webview: 881baa70f381b838964574f48153a2d453402922
+  react-native-webview: cf5527893252b3b036eea024a1da6996f7344c74
   React-RCTActionSheet: b6d2445d7317359997ed0c650421d0a0b9dd58cb
   React-RCTAnimation: 2f48bd93a4f5317cd5ab7189c6b5e469b60fb7bf
   React-RCTBlob: b8da9c90135ee183f3ad35b521313390370b5ed2
@@ -484,7 +495,8 @@ SPEC CHECKSUMS:
   ReactCommon: 14ae20c83bd846c1790e45ad95e0f0717dcd034f
   RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
   RNReanimated: 955cf4068714003d2f1a6e2bae3fb1118f359aff
-  RNScreens: ac02d0e4529f08ced69f5580d416f968a6ec3a1d
+  RNScreens: cf198f915f8a2bf163de94ca9f5bfc8d326c3706
+  RNSVG: ce9d996113475209013317e48b05c21ee988d42e
   Yoga: 5ffb724bde6d20a1828a1dc9a368085f404a1203
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
