@@ -251,8 +251,6 @@ PODS:
     - React-Core (= 0.63.0-rc.0)
     - React-cxxreact (= 0.63.0-rc.0)
     - React-jsi (= 0.63.0-rc.0)
-  - RNBootSplash (2.2.4):
-    - React
   - RNGestureHandler (1.6.1):
     - React
   - RNReanimated (1.8.0):
@@ -294,7 +292,6 @@ DEPENDENCIES:
   - React-RCTText (from `/Users/kilbot/Projects/wcpos-client/packages/mobile/node_modules/react-native/Libraries/Text`)
   - React-RCTVibration (from `/Users/kilbot/Projects/wcpos-client/packages/mobile/node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/turbomodule/core (from `/Users/kilbot/Projects/wcpos-client/packages/mobile/node_modules/react-native/ReactCommon`)
-  - RNBootSplash (from `../node_modules/react-native-bootsplash`)
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
@@ -362,8 +359,6 @@ EXTERNAL SOURCES:
     :path: "/Users/kilbot/Projects/wcpos-client/packages/mobile/node_modules/react-native/Libraries/Vibration"
   ReactCommon:
     :path: "/Users/kilbot/Projects/wcpos-client/packages/mobile/node_modules/react-native/ReactCommon"
-  RNBootSplash:
-    :path: "../node_modules/react-native-bootsplash"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
   RNReanimated:
@@ -405,7 +400,6 @@ SPEC CHECKSUMS:
   React-RCTText: 32e3c891fa74b1b2544517e59ee5fbc96f672983
   React-RCTVibration: ab7fb7b10ca373d7e931b15e18b5f6d1663367ca
   ReactCommon: 14ae20c83bd846c1790e45ad95e0f0717dcd034f
-  RNBootSplash: 7cb9b4fe7e94177edc0d11010f7631d79db2f5e9
   RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
   RNReanimated: 955cf4068714003d2f1a6e2bae3fb1118f359aff
   RNScreens: cf198f915f8a2bf163de94ca9f5bfc8d326c3706

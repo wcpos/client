@@ -26,7 +26,7 @@
     "react-native-webview": "9.4.0"
   },
   "devDependencies": {
-    "@types/react-native": "0.62.5",
+    "@types/react-native": "0.62.7",
     "metro-react-native-babel-preset": "0.59.0",
     "react-native-version": "4.0.0"
   }
