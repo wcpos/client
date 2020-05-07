@@ -2,8 +2,7 @@
 //  Swift.swift
 //  wcpos
 //
-//  Created by Paul Kilmurray on 3/3/19.
-//  Copyright © 2019 Facebook. All rights reserved.
+//  Created by Paul Kilmurray on 7/5/20.
 //
 
 import Foundation
