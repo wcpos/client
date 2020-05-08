@@ -1950,6 +1950,34 @@
     react-inspector "^4.0.0"
     uuid "^3.3.2"
 
+"@storybook/addon-backgrounds@5.3.18":
+  version "5.3.18"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-backgrounds/-/addon-backgrounds-5.3.18.tgz#1b5659c29ba0f6346dbc0371c1ae6e0951a91beb"
+  integrity sha512-PAsbnm+dQrchWaq5n1xOG0jXRd6eEotw9nK2fIYWcDKehzjT6/zHeiYOCol2WwAAOuk2aXxgKoFEn2YJhb3Ozw==
+  dependencies:
+    "@storybook/addons" "5.3.18"
+    "@storybook/api" "5.3.18"
+    "@storybook/client-logger" "5.3.18"
+    "@storybook/components" "5.3.18"
+    "@storybook/core-events" "5.3.18"
+    "@storybook/theming" "5.3.18"
+    core-js "^3.0.1"
+    memoizerific "^1.11.3"
+    react "^16.8.3"
+    util-deprecate "^1.0.2"
+
+"@storybook/addon-essentials@5.3.18":
+  version "5.3.18"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-essentials/-/addon-essentials-5.3.18.tgz#963bfe337751090f199391e98dc7ddfddf99a353"
+  integrity sha512-DSjeCaNkqsRhU9F7UtqhdBgNDP/pv0xgZ9fG7MYuLoN4IS8SMXF5oHzBHgQn3W5hBq/bd1rNq6cWrhENPvBA4w==
+  dependencies:
+    "@storybook/addon-backgrounds" "5.3.18"
+    "@storybook/addon-viewport" "5.3.18"
+    "@storybook/addons" "5.3.18"
+    "@storybook/api" "5.3.18"
+    "@storybook/node-logger" "5.3.18"
+    ts-dedent "^1.1.0"
+
 "@storybook/addon-info@5.3.18":
   version "5.3.18"
   resolved "https://registry.yarnpkg.com/@storybook/addon-info/-/addon-info-5.3.18.tgz#2b02c43eeb79770781eea82104c32a4f12a72da0"
@@ -1995,6 +2023,25 @@
     react-lifecycles-compat "^3.0.4"
     react-select "^3.0.8"
 
+"@storybook/addon-notes@5.3.18":
+  version "5.3.18"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-notes/-/addon-notes-5.3.18.tgz#dc8be958bbb082188c529aa31853e8cad389a642"
+  integrity sha512-P8d5P6+MErodRz2whP1f33ovhGMcOc/g4a+8qatiUotsPbg/2LKNRlY1QSfHWtm26NIGsgOTqSb0z1q6cyMNvQ==
+  dependencies:
+    "@storybook/addons" "5.3.18"
+    "@storybook/api" "5.3.18"
+    "@storybook/client-logger" "5.3.18"
+    "@storybook/components" "5.3.18"
+    "@storybook/core-events" "5.3.18"
+    "@storybook/router" "5.3.18"
+    "@storybook/theming" "5.3.18"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    markdown-to-jsx "^6.10.3"
+    memoizerific "^1.11.3"
+    prop-types "^15.7.2"
+    util-deprecate "^1.0.2"
+
 "@storybook/addon-ondevice-actions@5.3.18":
   version "5.3.18"
   resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-actions/-/addon-ondevice-actions-5.3.18.tgz#733c4bac436805d77fe123ad0385979cda06f8ea"
@@ -2020,6 +2067,23 @@
     react-native-modal-datetime-picker "^7.4.2"
     react-native-modal-selector "^1.0.2"
     react-native-switch "^1.5.0"
+
+"@storybook/addon-viewport@5.3.18":
+  version "5.3.18"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-5.3.18.tgz#9cfeb93e473845436e0c7fb74d590305ff7ef48e"
+  integrity sha512-9ofmbhYm4fU28u9Gasywwul8OLVhKlu1aiLnLfYUd+ZE2r9WuNxGW93m3iIgtccynpANn9phFcgEmWGKfY3vIw==
+  dependencies:
+    "@storybook/addons" "5.3.18"
+    "@storybook/api" "5.3.18"
+    "@storybook/client-logger" "5.3.18"
+    "@storybook/components" "5.3.18"
+    "@storybook/core-events" "5.3.18"
+    "@storybook/theming" "5.3.18"
+    core-js "^3.0.1"
+    global "^4.3.2"
+    memoizerific "^1.11.3"
+    prop-types "^15.7.2"
+    util-deprecate "^1.0.2"
 
 "@storybook/addons@5.3.18":
   version "5.3.18"
@@ -10891,7 +10955,7 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-markdown-to-jsx@^6.9.1, markdown-to-jsx@^6.9.3:
+markdown-to-jsx@^6.10.3, markdown-to-jsx@^6.9.1, markdown-to-jsx@^6.9.3:
   version "6.11.1"
   resolved "https://registry.yarnpkg.com/markdown-to-jsx/-/markdown-to-jsx-6.11.1.tgz#3931612cfffaa5fd6610ecf2a4055eccccb98fa8"
   integrity sha512-FdtDAv8d9/tjyHxdCvWZxxOgK2icwzBkTq/dPk+XlQ2B+DYDcwE89FWGzT92erXQ0CQR/bQbpNK3loNYhYL70g==
