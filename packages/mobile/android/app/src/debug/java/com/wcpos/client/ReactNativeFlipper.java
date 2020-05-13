@@ -29,6 +29,9 @@ import java.io.File;
 import java.util.List;
 import java.util.ArrayList;
 
+import android.os.Build;
+import androidx.annotation.RequiresApi;
+
 public class ReactNativeFlipper {
   public static void initializeFlipper(Context context, ReactInstanceManager reactInstanceManager) {
     if (FlipperUtils.shouldEnableFlipper(context)) {
@@ -36,14 +39,22 @@ public class ReactNativeFlipper {
       client.addPlugin(new InspectorFlipperPlugin(context, DescriptorMapping.withDefaults()));
       client.addPlugin(new ReactFlipperPlugin());
       client.addPlugin(new DatabasesFlipperPlugin(new SqliteDatabaseDriver(context, new SqliteDatabaseProvider() {
+        @RequiresApi(api = Build.VERSION_CODES.N)
         @Override
         public List<File> getDatabaseFiles() {
           List<File> databaseFiles = new ArrayList<>();
           for (String databaseName : context.databaseList()) {
               databaseFiles.add(context.getDatabasePath(databaseName));
           }
-          String watermelondb = context.getDatabasePath("wcpos-sites.db").getPath().replace("/databases", "");
-          databaseFiles.add(new File(watermelondb));
+
+          File dir = context.getDataDir();
+          File[] files = dir.listFiles((d, name) -> name.endsWith(".db"));
+          for (int i = 0; i < files.length; i++) {
+            databaseFiles.add(files[i]);
+          }
+
+//          String watermelondb = context.getDatabasePath("wcpos-sites.db").getPath().replace("/databases", "");
+//          databaseFiles.add(new File(watermelondb));
           return databaseFiles;
         }
       })));

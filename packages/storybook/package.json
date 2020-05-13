@@ -16,7 +16,7 @@
     "@storybook/addon-notes": "5.3.18",
     "@storybook/addon-ondevice-actions": "5.3.18",
     "@storybook/addon-ondevice-knobs": "5.3.18",
-    "@storybook/preset-create-react-app": "2.1.1",
+    "@storybook/preset-create-react-app": "2.1.2",
     "@storybook/react": "5.3.18",
     "@storybook/react-native": "5.3.18",
     "react": "16.13.1",

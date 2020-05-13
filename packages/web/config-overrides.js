@@ -4,6 +4,7 @@ const {
 	addDecoratorsLegacy,
 	addBabelPlugins,
 	addWebpackAlias,
+	addWebpackModuleRule,
 } = require('customize-cra');
 const path = require('path');
 
@@ -33,5 +34,10 @@ module.exports = override(
 	]),
 	addWebpackAlias({
 		'react-native-linear-gradient': 'react-native-web-linear-gradient',
+	}),
+	addWebpackModuleRule({
+		test: /\.svg$/,
+		exclude: /node_modules/,
+		use: [{ loader: '@svgr/webpack' }],
 	})
 );

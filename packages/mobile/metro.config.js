@@ -1,5 +1,7 @@
 const path = require('path');
 const blacklist = require('metro-config/src/defaults/blacklist');
+const defaultAssetExts = require('metro-config/src/defaults/defaults').assetExts;
+const defaultSourceExts = require('metro-config/src/defaults/defaults').sourceExts;
 
 module.exports = {
 	projectRoot: path.resolve(__dirname),
@@ -9,6 +11,8 @@ module.exports = {
 		path.resolve(__dirname, '../storybook'),
 	],
 	resolver: {
+		assetExts: [...defaultAssetExts.filter((ext) => ext !== 'svg'), 'md'],
+		sourceExts: [...defaultSourceExts, 'svg'],
 		blacklistRE: blacklist([
 			// prevent react-native conflict in project root or common directory
 			new RegExp(path.resolve(__dirname, '../../node_modules/react-native') + '/.*'),
@@ -30,5 +34,6 @@ module.exports = {
 				inlineRequires: false,
 			},
 		}),
+		babelTransformerPath: require.resolve('react-native-svg-transformer'),
 	},
 };

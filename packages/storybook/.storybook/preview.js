@@ -7,7 +7,7 @@ import { withInfo } from '@storybook/addon-info';
 import { ThemeProvider } from 'styled-components/native';
 import { defaultTheme } from '@wcpos/common/src/lib/theme';
 
-import '@wcpos/common/src/fonts/fonts.css';
+// import '@wcpos/common/src/fonts/fonts.css';
 
 // Option defaults
 addParameters({

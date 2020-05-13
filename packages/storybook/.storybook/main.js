@@ -9,6 +9,13 @@ module.exports = {
 	],
 
 	webpackFinal: async (config) => {
+		console.log(config.module.rules);
+		config.module.rules[2] = {
+			test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|cur|ani|pdf)(\?.*)?$/,
+			loader: '/Users/kilbot/Projects/wcpos-client/node_modules/file-loader/dist/cjs.js',
+			query: { name: 'static/media/[name].[hash:8].[ext]' },
+		};
+
 		config.module.rules.push({
 			test: /\.(ts|tsx)$/,
 			loader: 'babel-loader',
@@ -17,9 +24,16 @@ module.exports = {
 			},
 		});
 
+		config.module.rules.push({
+			test: /\.svg$/,
+			exclude: /node_modules/,
+			use: [{ loader: '@svgr/webpack' }],
+		});
+		console.log(config.module.rules);
+
 		//
 		config.resolve.alias = config.resolve.alias || {};
-		config.resolve.alias['react-native'] = 'react-native-web';
+		// config.resolve.alias['react-native'] = 'react-native-web'; // added by create-react-app config
 		config.resolve.alias['react-native-linear-gradient'] = 'react-native-web-linear-gradient';
 
 		// resolve .web.js before .js
@@ -34,6 +48,7 @@ module.exports = {
 			'.web.tsx',
 			'.tsx',
 			'.json',
+			'.svg',
 		];
 
 		// winston logging to file
