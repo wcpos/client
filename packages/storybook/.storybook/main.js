@@ -9,7 +9,7 @@ module.exports = {
 	],
 
 	webpackFinal: async (config) => {
-		console.log(config.module.rules);
+		/** @TODO create less fragile way to remove svg from default config */
 		config.module.rules[2] = {
 			test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|cur|ani|pdf)(\?.*)?$/,
 			loader: '/Users/kilbot/Projects/wcpos-client/node_modules/file-loader/dist/cjs.js',
@@ -29,7 +29,6 @@ module.exports = {
 			exclude: /node_modules/,
 			use: [{ loader: '@svgr/webpack' }],
 		});
-		console.log(config.module.rules);
 
 		//
 		config.resolve.alias = config.resolve.alias || {};
