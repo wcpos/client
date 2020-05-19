@@ -16,19 +16,19 @@
     "postversion": "react-native-version --never-amend"
   },
   "dependencies": {
-    "@nozbe/watermelondb": "0.16.1-0",
+    "@nozbe/watermelondb": "0.16.1",
     "react": "16.13.1",
     "react-native": "0.63.0-rc.1",
     "react-native-gesture-handler": "1.6.1",
     "react-native-linear-gradient": "2.5.6",
     "react-native-reanimated": "1.8.0",
-    "react-native-safe-area-context": "1.0.0",
+    "react-native-safe-area-context": "1.0.2",
     "react-native-screens": "2.7.0",
     "react-native-svg": "12.1.0",
     "react-native-webview": "9.4.0"
   },
   "devDependencies": {
-    "@types/react-native": "0.62.9",
+    "@types/react-native": "0.62.10",
     "metro-react-native-babel-preset": "0.59.0",
     "react-native-svg-transformer": "^0.14.3",
     "react-native-version": "4.0.0"
