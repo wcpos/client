@@ -28,7 +28,6 @@
           <data android:scheme="wcpos" />
         </intent-filter>
       </activity>
-      <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
     </application>
 
 </manifest>
