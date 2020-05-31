@@ -187,9 +187,9 @@ PODS:
     - React-cxxreact (= 0.63.0-rc.1)
     - React-jsi (= 0.63.0-rc.1)
   - React-jsinspector (0.63.0-rc.1)
-  - react-native-safe-area-context (2.0.0):
+  - react-native-safe-area-context (3.0.2):
     - React
-  - react-native-webview (9.4.0):
+  - react-native-webview (10.2.3):
     - React
   - React-RCTActionSheet (0.63.0-rc.1):
     - React-Core/RCTActionSheetHeaders (= 0.63.0-rc.1)
@@ -388,8 +388,8 @@ SPEC CHECKSUMS:
   React-jsi: a968acc454a107677da6027d2111221f57765de9
   React-jsiexecutor: c40a9c0e687bd7a44cc0a616ff4592a823732a0d
   React-jsinspector: 655f32d922ffb180714c0bec652e7e0923b5a5dd
-  react-native-safe-area-context: 60f654e00b6cc416573f6d5dbfce3839958eb57a
-  react-native-webview: cf5527893252b3b036eea024a1da6996f7344c74
+  react-native-safe-area-context: b11a34881faac509cad5578726c98161ad4d275c
+  react-native-webview: 0bacc79175bc44869e4c1a015b9bc21df8cf4feb
   React-RCTActionSheet: ead415a8470cd3552f8cadce3b9b32e0d52e46a7
   React-RCTAnimation: 627dc8ad905b206c9bf10e9527079ef754b6a5dc
   React-RCTBlob: e70ce946cee9d400c5bfb0e8668dd11db852fa5a
