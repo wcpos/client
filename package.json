@@ -1,62 +1,68 @@
 {
-  "name": "wcpos",
-  "version": "0.0.1",
-  "main": "packages/web/src/index.tsx",
-  "repository": "https://github.com/wcpos/client",
-  "author": "kilbot",
-  "license": "MIT",
-  "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ],
-    "nohoist": [
-      "@wcpos/mobile/react-native",
-      "@wcpos/mobile/react-native/**",
-      "@wcpos/mobile/react-native-*",
-      "@wcpos/mobile/react-native-*/**",
-      "@wcpos/mobile/@nozbe/watermelondb",
-      "@wcpos/mobile/@nozbe/watermelondb/**"
-    ]
-  },
-  "scripts": {
-    "desktop": "yarn --cwd packages/desktop",
-    "mobile": "yarn --cwd packages/mobile",
-    "storybook": "yarn --cwd packages/storybook",
-    "web": "yarn --cwd packages/web",
-    "common": "yarn --cwd packages/common",
-    "clean": "yarn workspaces run clean && yarn cache clean && shx rm -rf yarn.lock && rm -rf node_modules",
-    "version": "yarn workspaces run version --no-git-tag-version --new-version $npm_package_version && yarn workspace @wcpos/mobile postversion",
-    "postversion": "git push --tags && yarn publish . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\"",
-    "postinstall": "patch-package && cd packages/mobile/ios && pod install",
-    "jest": "jest --coverage --silent",
-    "test": "yarn jest"
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-decorators": "7.10.1",
-    "@babel/plugin-proposal-nullish-coalescing-operator": "7.10.1",
-    "@babel/plugin-proposal-optional-chaining": "7.10.1",
-    "@types/jest": "25.2.3",
-    "@types/rewire": "2.5.28",
-    "@typescript-eslint/eslint-plugin": "3.0.2",
-    "@typescript-eslint/parser": "3.0.2",
-    "babel-eslint": "10.1.0",
-    "babel-jest": "26.0.1",
-    "eslint": "7.1.0",
-    "eslint-config-prettier": "6.11.0",
-    "eslint-config-react-app": "5.2.1",
-    "eslint-plugin-flowtype": "5.1.3",
-    "eslint-plugin-import": "2.20.2",
-    "eslint-plugin-jsx-a11y": "6.2.3",
-    "eslint-plugin-prettier": "3.1.3",
-    "eslint-plugin-react": "7.20.0",
-    "eslint-plugin-react-hooks": "4.0.4",
-    "eslint-plugin-react-native": "3.8.1",
-    "jest": "26.0.1",
-    "patch-package": "6.2.2",
-    "postinstall-postinstall": "2.1.0",
-    "prettier": "2.0.5",
-    "shx": "0.3.2"
-  },
-  "dependencies": {}
+	"name": "wcpos",
+	"version": "0.0.1",
+	"main": "packages/web/src/index.tsx",
+	"repository": "https://github.com/wcpos/client",
+	"author": "kilbot",
+	"license": "MIT",
+	"private": true,
+	"workspaces": {
+		"packages": [
+			"packages/*"
+		],
+		"nohoist": [
+			"@wcpos/mobile/react-native",
+			"@wcpos/mobile/react-native/**",
+			"@wcpos/mobile/react-native-*",
+			"@wcpos/mobile/react-native-*/**",
+			"@wcpos/mobile/@nozbe/watermelondb",
+			"@wcpos/mobile/@nozbe/watermelondb/**"
+		]
+	},
+	"resolutions": {
+		"react": "0.0.0-33c3af284",
+		"react-dom": "0.0.0-33c3af284",
+		"react-art": "0.0.0-33c3af284",
+		"react-native-web": "0.0.0-c4821103d"
+	},
+	"scripts": {
+		"desktop": "yarn --cwd packages/desktop",
+		"mobile": "yarn --cwd packages/mobile",
+		"storybook": "yarn --cwd packages/storybook",
+		"web": "yarn --cwd packages/web",
+		"common": "yarn --cwd packages/common",
+		"clean": "yarn workspaces run clean && yarn cache clean && shx rm -rf yarn.lock && rm -rf node_modules",
+		"version": "yarn workspaces run version --no-git-tag-version --new-version $npm_package_version && yarn workspace @wcpos/mobile postversion",
+		"postversion": "git push --tags && yarn publish . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\"",
+		"postinstall": "patch-package && cd packages/mobile/ios && pod install",
+		"jest": "jest --coverage --silent",
+		"test": "yarn jest"
+	},
+	"devDependencies": {
+		"@babel/plugin-proposal-decorators": "7.10.1",
+		"@babel/plugin-proposal-nullish-coalescing-operator": "7.10.1",
+		"@babel/plugin-proposal-optional-chaining": "7.10.1",
+		"@types/jest": "25.2.3",
+		"@types/rewire": "2.5.28",
+		"@typescript-eslint/eslint-plugin": "3.1.0",
+		"@typescript-eslint/parser": "3.1.0",
+		"babel-eslint": "10.1.0",
+		"babel-jest": "26.0.1",
+		"eslint": "7.1.0",
+		"eslint-config-prettier": "6.11.0",
+		"eslint-config-react-app": "5.2.1",
+		"eslint-plugin-flowtype": "5.1.3",
+		"eslint-plugin-import": "2.20.2",
+		"eslint-plugin-jsx-a11y": "6.2.3",
+		"eslint-plugin-prettier": "3.1.3",
+		"eslint-plugin-react": "7.20.0",
+		"eslint-plugin-react-hooks": "4.0.4",
+		"eslint-plugin-react-native": "3.8.1",
+		"jest": "26.0.1",
+		"patch-package": "6.2.2",
+		"postinstall-postinstall": "2.1.0",
+		"prettier": "2.0.5",
+		"shx": "0.3.2"
+	},
+	"dependencies": {}
 }
