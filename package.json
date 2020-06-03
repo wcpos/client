@@ -20,10 +20,9 @@
 		]
 	},
 	"resolutions": {
-		"react": "0.0.0-33c3af284",
-		"react-dom": "0.0.0-33c3af284",
-		"react-art": "0.0.0-33c3af284",
-		"react-native-web": "0.0.0-c4821103d"
+		"react": "16.13.1",
+		"react-dom": "16.13.1",
+		"react-art": "16.13.1"
 	},
 	"scripts": {
 		"desktop": "yarn --cwd packages/desktop",
@@ -49,10 +48,10 @@
 		"babel-eslint": "10.1.0",
 		"babel-jest": "26.0.1",
 		"eslint": "7.1.0",
+		"eslint-config-airbnb": "18.1.0",
 		"eslint-config-prettier": "6.11.0",
-		"eslint-config-react-app": "5.2.1",
-		"eslint-plugin-flowtype": "5.1.3",
 		"eslint-plugin-import": "2.20.2",
+		"eslint-plugin-jest": "^23.13.2",
 		"eslint-plugin-jsx-a11y": "6.2.3",
 		"eslint-plugin-prettier": "3.1.3",
 		"eslint-plugin-react": "7.20.0",

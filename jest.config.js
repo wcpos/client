@@ -1,4 +1,5 @@
 const { defaults } = require('jest-config');
+
 console.log(defaults);
 
 module.exports = {
@@ -132,10 +133,7 @@ module.exports = {
 	// testLocationInResults: false,
 
 	// The glob patterns Jest uses to detect test files
-	// testMatch: [
-	//   "**/__tests__/**/*.[jt]s?(x)",
-	//   "**/?(*.)+(spec|test).[tj]s?(x)"
-	// ],
+	testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[tj]s?(x)'],
 
 	// An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
 	// testPathIgnorePatterns: [
@@ -143,7 +141,7 @@ module.exports = {
 	// ],
 
 	// The regexp pattern or array of patterns that Jest uses to detect test files
-	testRegex: ['(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$'],
+	// testRegex: ['(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?|ts?|js)$'],
 
 	// This option allows the use of a custom results processor
 	// testResultsProcessor: null,
