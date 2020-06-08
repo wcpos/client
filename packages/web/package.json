@@ -1,37 +1,38 @@
 {
-  "name": "@wcpos/web",
-  "version": "0.0.1",
-  "private": true,
-  "homepage": "./",
-  "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build && shx rm -rf dist && mv build dist",
-    "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject",
-    "clean": "shx rm -rf dist && rm -rf node_modules"
-  },
-  "dependencies": {
-    "react": "16.13.1",
-    "react-art": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-native-web": "0.12.3",
-    "worker-loader": "2.0.0"
-  },
-  "devDependencies": {
-    "@types/jest": "25.2.3",
-    "@types/node": "14.0.10",
-    "@types/react": "16.9.35",
-    "@types/react-dom": "16.9.8",
-    "babel-plugin-react-native-web": "0.12.3",
-    "customize-cra": "1.0.0",
-    "react-app-rewired": "2.1.6",
-    "react-scripts": "3.4.1",
-    "typescript": "3.9.5"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+	"name": "@wcpos/web",
+	"version": "0.0.1",
+	"private": true,
+	"homepage": "./",
+	"scripts": {
+		"start": "react-app-rewired start",
+		"build": "react-app-rewired build && shx rm -rf dist && mv build dist",
+		"test": "react-app-rewired test",
+		"eject": "react-app-rewired eject",
+		"clean": "shx rm -rf dist && rm -rf node_modules"
+	},
+	"dependencies": {
+		"react": "16.13.1",
+		"react-art": "16.13.1",
+		"react-dom": "16.13.1",
+		"react-native-web": "0.12.3",
+		"worker-loader": "2.0.0"
+	},
+	"devDependencies": {
+		"@types/jest": "25.2.3",
+		"@types/node": "14.0.11",
+		"@types/react": "16.9.35",
+		"@types/react-dom": "16.9.8",
+		"babel-plugin-react-native-web": "0.12.3",
+		"customize-cra": "1.0.0",
+		"react-app-rewired": "2.1.6",
+		"react-scripts": "3.4.1",
+		"typescript": "3.9.5",
+		"webpack-bundle-analyzer": "3.8.0"
+	},
+	"browserslist": [
+		">0.2%",
+		"not dead",
+		"not ie <= 11",
+		"not op_mini all"
+	]
 }

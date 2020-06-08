@@ -5,6 +5,7 @@ const {
 	addBabelPlugins,
 	addWebpackAlias,
 	addWebpackModuleRule,
+	addBundleVisualizer,
 } = require('customize-cra');
 const path = require('path');
 
@@ -39,5 +40,6 @@ module.exports = override(
 		test: /\.svg$/,
 		exclude: /node_modules/,
 		use: [{ loader: '@svgr/webpack' }],
-	})
+	}),
+	addBundleVisualizer({ openAnalyzer: false })
 );

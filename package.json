@@ -19,11 +19,6 @@
 			"@wcpos/mobile/@nozbe/watermelondb/**"
 		]
 	},
-	"resolutions": {
-		"react": "16.13.1",
-		"react-dom": "16.13.1",
-		"react-art": "16.13.1"
-	},
 	"scripts": {
 		"desktop": "yarn --cwd packages/desktop",
 		"mobile": "yarn --cwd packages/mobile",
@@ -47,10 +42,10 @@
 		"@typescript-eslint/parser": "3.1.0",
 		"babel-eslint": "10.1.0",
 		"babel-jest": "26.0.1",
-		"eslint": "7.1.0",
+		"eslint": "7.2.0",
 		"eslint-config-airbnb": "18.1.0",
 		"eslint-config-prettier": "6.11.0",
-		"eslint-plugin-import": "2.20.2",
+		"eslint-plugin-import": "2.21.1",
 		"eslint-plugin-jest": "^23.13.2",
 		"eslint-plugin-jsx-a11y": "6.2.3",
 		"eslint-plugin-prettier": "3.1.3",
