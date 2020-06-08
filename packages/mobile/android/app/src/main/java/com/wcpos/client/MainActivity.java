@@ -1,12 +1,9 @@
 package com.wcpos.client;
 
 import com.facebook.react.ReactActivity;
-
-/**
- * https://reactnavigation.org/docs/en/getting-started.html
- */
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
+
 import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
 
 public class MainActivity extends ReactActivity {

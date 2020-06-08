@@ -10,14 +10,7 @@
 		"packages": [
 			"packages/*"
 		],
-		"nohoist": [
-			"@wcpos/mobile/react-native",
-			"@wcpos/mobile/react-native/**",
-			"@wcpos/mobile/react-native-*",
-			"@wcpos/mobile/react-native-*/**",
-			"@wcpos/mobile/@nozbe/watermelondb",
-			"@wcpos/mobile/@nozbe/watermelondb/**"
-		]
+		"nohoist": []
 	},
 	"scripts": {
 		"desktop": "yarn --cwd packages/desktop",
