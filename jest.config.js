@@ -1,6 +1,4 @@
-const { defaults } = require('jest-config');
-
-console.log(defaults);
+// const { defaults } = require('jest-config');
 
 module.exports = {
 	// All imported modules in your tests should be mocked automatically
