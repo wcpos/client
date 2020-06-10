@@ -10,7 +10,7 @@
 		"tsc": "tsc",
 		"clean": "shx rm -rf ios/build && rm -rf android/build && rm -rf node_modules && watchman watch-del-all",
 		"clean:ios": "shx rm -rf ios/build && xcodebuild clean",
-		"clean:android": "shx rm -rf android/build && cd android && ./gradlew clean",
+		"clean:android": "shx rm -rf android/app/build && cd android && ./gradlew clean",
 		"studio": "open -a /Applications/Android\\ Studio.app ./android/",
 		"xcode": "open ios/wcpos.xcodeproj",
 		"postversion": "react-native-version --never-amend",
@@ -23,7 +23,7 @@
 		"react-native-gesture-handler": "1.6.1",
 		"react-native-linear-gradient": "2.5.6",
 		"react-native-reanimated": "1.9.0",
-		"react-native-safe-area-context": "3.0.2",
+		"react-native-safe-area-context": "3.0.3",
 		"react-native-screens": "2.8.0",
 		"react-native-svg": "12.1.0",
 		"react-native-webview": "10.2.3"

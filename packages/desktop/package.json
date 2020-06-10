@@ -1,69 +1,69 @@
 {
-  "name": "@wcpos/desktop",
-  "description": "A simple front-end for taking WooCommerce orders at the Point of Sale.",
-  "version": "0.0.1",
-  "main": "dist/index.js",
-  "repository": "https://github.com/wcpos/client",
-  "private": true,
-  "author": {
-    "name": "kilbot",
-    "email": "support@wcpos.com",
-    "url": "https://wcpos.com"
-  },
-  "scripts": {
-    "start": "yarn compile && electron .",
-    "clean": "shx rm -rf build && rm -rf dist && rm -rf node_modules",
-    "compile": "tsc -b",
-    "build": "yarn build:base && yarn build:web && yarn build:web:post && yarn build:electron",
-    "build:base": "shx rm -rf build && rm -rf dist && yarn compile",
-    "build:electron": "electron-builder -mwl",
-    "build:skipweb": "yarn build:base && yarn build:web:post && yarn build:electron",
-    "build:web": "pushd \"../web\" && yarn build && popd",
-    "build:web:post": "shx cp -Rf ../web/dist dist/web"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "electron": "9.0.2",
-    "electron-builder": "22.7.0",
-    "electron-is-dev": "1.2.0"
-  },
-  "build": {
-    "appId": "com.wcpos.client",
-    "productName": "WooCommerce POS",
-    "copyright": "Copyright © 2019 ${author}",
-    "extends": null,
-    "directories": {
-      "buildResources": "assets",
-      "output": "build"
-    },
-    "extraMetadata": {
-      "name": "wcpos"
-    },
-    "linux": {
-      "icon": "icons/app.icns"
-    },
-    "mac": {
-      "category": "public.app-category.developer-tools",
-      "icon": "icons/app.icns"
-    },
-    "win": {
-      "icon": "icons/app.ico"
-    },
-    "files": [
-      "assets",
-      "dist"
-    ],
-    "protocols": [
-      {
-        "name": "wcpos",
-        "schemes": [
-          "wcpos"
-        ]
-      }
-    ],
-    "publish": {
-      "provider": "github",
-      "releaseType": "release"
-    }
-  }
+	"name": "@wcpos/desktop",
+	"description": "A simple front-end for taking WooCommerce orders at the Point of Sale.",
+	"version": "0.0.1",
+	"main": "dist/index.js",
+	"repository": "https://github.com/wcpos/client",
+	"private": true,
+	"author": {
+		"name": "kilbot",
+		"email": "support@wcpos.com",
+		"url": "https://wcpos.com"
+	},
+	"scripts": {
+		"start": "yarn compile && electron .",
+		"clean": "shx rm -rf build && rm -rf dist && rm -rf node_modules",
+		"compile": "tsc -b",
+		"build": "yarn build:base && yarn build:web && yarn build:web:post && yarn build:electron",
+		"build:base": "shx rm -rf build && rm -rf dist && yarn compile",
+		"build:electron": "electron-builder -mwl",
+		"build:skipweb": "yarn build:base && yarn build:web:post && yarn build:electron",
+		"build:web": "pushd \"../web\" && yarn build && popd",
+		"build:web:post": "shx cp -Rf ../web/dist dist/web"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"electron": "9.0.3",
+		"electron-builder": "22.7.0",
+		"electron-is-dev": "1.2.0"
+	},
+	"build": {
+		"appId": "com.wcpos.client",
+		"productName": "WooCommerce POS",
+		"copyright": "Copyright © 2019 ${author}",
+		"extends": null,
+		"directories": {
+			"buildResources": "assets",
+			"output": "build"
+		},
+		"extraMetadata": {
+			"name": "wcpos"
+		},
+		"linux": {
+			"icon": "icons/app.icns"
+		},
+		"mac": {
+			"category": "public.app-category.developer-tools",
+			"icon": "icons/app.icns"
+		},
+		"win": {
+			"icon": "icons/app.ico"
+		},
+		"files": [
+			"assets",
+			"dist"
+		],
+		"protocols": [
+			{
+				"name": "wcpos",
+				"schemes": [
+					"wcpos"
+				]
+			}
+		],
+		"publish": {
+			"provider": "github",
+			"releaseType": "release"
+		}
+	}
 }
