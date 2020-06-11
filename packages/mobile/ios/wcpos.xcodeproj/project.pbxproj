@@ -13,7 +13,6 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		617FDA4F2463F99D00CA6A7F /* WooCommercePOS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 617FDA4E2463F99D00CA6A7F /* WooCommercePOS.ttf */; };
 		617FDA522463FA7D00CA6A7F /* Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617FDA512463FA7D00CA6A7F /* Swift.swift */; };
-		617FDA592463FB7F00CA6A7F /* libWatermelonDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 617FDA582463FB5C00CA6A7F /* libWatermelonDB.a */; };
 		6AFDB0112490C0D50C781B3C /* libPods-wcpos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFB043DF81030D3EBBFC7F5 /* libPods-wcpos.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		F714CF0E65C89CCBF597E8E1 /* libPods-wcpos-wcposTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0184E1DCC750E6D4FACB4560 /* libPods-wcpos-wcposTests.a */; };
@@ -27,7 +26,7 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = wcpos;
 		};
-		617FDA572463FB5C00CA6A7F /* PBXContainerItemProxy */ = {
+		61FBA833249255800056E4CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 617FDA532463FB5C00CA6A7F /* WatermelonDB.xcodeproj */;
 			proxyType = 2;
@@ -52,7 +51,7 @@
 		617FDA4E2463F99D00CA6A7F /* WooCommercePOS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = WooCommercePOS.ttf; path = ../../../common/src/fonts/WooCommercePOS.ttf; sourceTree = "<group>"; };
 		617FDA502463FA7C00CA6A7F /* wcpos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wcpos-Bridging-Header.h"; sourceTree = "<group>"; };
 		617FDA512463FA7D00CA6A7F /* Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift.swift; sourceTree = "<group>"; };
-		617FDA532463FB5C00CA6A7F /* WatermelonDB.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WatermelonDB.xcodeproj; path = "../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB.xcodeproj"; sourceTree = "<group>"; };
+		617FDA532463FB5C00CA6A7F /* WatermelonDB.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WatermelonDB.xcodeproj; path = "../../../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB.xcodeproj"; sourceTree = "<group>"; };
 		6FFB043DF81030D3EBBFC7F5 /* libPods-wcpos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wcpos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = wcpos/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BAE8E8B19AE6E448FA88F87 /* Pods-wcpos-wcposTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wcpos-wcposTests.release.xcconfig"; path = "Target Support Files/Pods-wcpos-wcposTests/Pods-wcpos-wcposTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				617FDA592463FB7F00CA6A7F /* libWatermelonDB.a in Frameworks */,
 				6AFDB0112490C0D50C781B3C /* libPods-wcpos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,10 +144,10 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
-		617FDA542463FB5C00CA6A7F /* Products */ = {
+		61FBA830249255800056E4CD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				617FDA582463FB5C00CA6A7F /* libWatermelonDB.a */,
+				61FBA834249255800056E4CD /* libWatermelonDB.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -262,7 +260,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 617FDA542463FB5C00CA6A7F /* Products */;
+					ProductGroup = 61FBA830249255800056E4CD /* Products */;
 					ProjectRef = 617FDA532463FB5C00CA6A7F /* WatermelonDB.xcodeproj */;
 				},
 			);
@@ -275,11 +273,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		617FDA582463FB5C00CA6A7F /* libWatermelonDB.a */ = {
+		61FBA834249255800056E4CD /* libWatermelonDB.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libWatermelonDB.a;
-			remoteRef = 617FDA572463FB5C00CA6A7F /* PBXContainerItemProxy */;
+			remoteRef = 61FBA833249255800056E4CD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

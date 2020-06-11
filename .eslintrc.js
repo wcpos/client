@@ -15,13 +15,14 @@ module.exports = {
 		project: './tsconfig.json',
 		sourceType: 'module',
 	},
-	plugins: ['@typescript-eslint', 'jest', 'react-native', 'prettier'],
+	plugins: ['@typescript-eslint', 'jest', 'react-native', 'react-hooks', 'prettier'],
 	rules: {
 		'react/jsx-filename-extension': [1, { extensions: ['.jsx', '.tsx'] }],
 		'import/extensions': ['error', 'never'],
 		'spaced-comment': ['error', 'always', { markers: ['/'] }],
 		'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
 		'react/prop-types': 'off',
+		'react/destructuring-assignment:': 'off',
 		'react/jsx-indent': [2, 'tab'],
 		'react/jsx-indent-props': [2, 'tab'],
 		'react/jsx-wrap-multilines': [
@@ -36,6 +37,8 @@ module.exports = {
 				prop: 'ignore',
 			},
 		],
+		'react-hooks/rules-of-hooks': 'warn',
+		'react-hooks/exhaustive-deps': 'warn',
 		'prettier/prettier': 'error',
 	},
 	settings: {

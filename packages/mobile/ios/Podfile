@@ -6,6 +6,8 @@ platform :ios, '10.0'
 target 'wcpos' do
   config = use_native_modules!
   use_react_native!(:path => config["reactNativePath"])
+  # use_native_modules!
+  # use_react_native!(path: '../../../node_modules/react-native')
 
   target 'wcposTests' do
     inherit! :complete

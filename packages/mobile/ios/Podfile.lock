@@ -187,6 +187,8 @@ PODS:
     - React-cxxreact (= 0.63.0-rc.1)
     - React-jsi (= 0.63.0-rc.1)
   - React-jsinspector (0.63.0-rc.1)
+  - react-native-netinfo (5.9.2):
+    - React
   - react-native-safe-area-context (3.0.3):
     - React
   - react-native-webview (10.2.3):
@@ -251,6 +253,8 @@ PODS:
     - React-Core (= 0.63.0-rc.1)
     - React-cxxreact (= 0.63.0-rc.1)
     - React-jsi (= 0.63.0-rc.1)
+  - RNDeviceInfo (5.6.1):
+    - React
   - RNGestureHandler (1.6.1):
     - React
   - RNReanimated (1.9.0):
@@ -280,6 +284,7 @@ DEPENDENCIES:
   - React-jsi (from `/Users/kilbot/Projects/wcpos-client/node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `/Users/kilbot/Projects/wcpos-client/node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `/Users/kilbot/Projects/wcpos-client/node_modules/react-native/ReactCommon/jsinspector`)
+  - "react-native-netinfo (from `../../../node_modules/@react-native-community/netinfo`)"
   - react-native-safe-area-context (from `../../../node_modules/react-native-safe-area-context`)
   - react-native-webview (from `../../../node_modules/react-native-webview`)
   - React-RCTActionSheet (from `/Users/kilbot/Projects/wcpos-client/node_modules/react-native/Libraries/ActionSheetIOS`)
@@ -292,6 +297,7 @@ DEPENDENCIES:
   - React-RCTText (from `/Users/kilbot/Projects/wcpos-client/node_modules/react-native/Libraries/Text`)
   - React-RCTVibration (from `/Users/kilbot/Projects/wcpos-client/node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/turbomodule/core (from `/Users/kilbot/Projects/wcpos-client/node_modules/react-native/ReactCommon`)
+  - RNDeviceInfo (from `../../../node_modules/react-native-device-info`)
   - RNGestureHandler (from `../../../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../../../node_modules/react-native-reanimated`)
   - RNScreens (from `../../../node_modules/react-native-screens`)
@@ -335,6 +341,8 @@ EXTERNAL SOURCES:
     :path: "/Users/kilbot/Projects/wcpos-client/node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "/Users/kilbot/Projects/wcpos-client/node_modules/react-native/ReactCommon/jsinspector"
+  react-native-netinfo:
+    :path: "../../../node_modules/@react-native-community/netinfo"
   react-native-safe-area-context:
     :path: "../../../node_modules/react-native-safe-area-context"
   react-native-webview:
@@ -359,6 +367,8 @@ EXTERNAL SOURCES:
     :path: "/Users/kilbot/Projects/wcpos-client/node_modules/react-native/Libraries/Vibration"
   ReactCommon:
     :path: "/Users/kilbot/Projects/wcpos-client/node_modules/react-native/ReactCommon"
+  RNDeviceInfo:
+    :path: "../../../node_modules/react-native-device-info"
   RNGestureHandler:
     :path: "../../../node_modules/react-native-gesture-handler"
   RNReanimated:
@@ -388,6 +398,7 @@ SPEC CHECKSUMS:
   React-jsi: a968acc454a107677da6027d2111221f57765de9
   React-jsiexecutor: c40a9c0e687bd7a44cc0a616ff4592a823732a0d
   React-jsinspector: 655f32d922ffb180714c0bec652e7e0923b5a5dd
+  react-native-netinfo: cb74e17062b2af5a16a4b137f32495f241df1a8e
   react-native-safe-area-context: 45e98227f3d65b31d384a5d0950aec4bf73a884c
   react-native-webview: 0bacc79175bc44869e4c1a015b9bc21df8cf4feb
   React-RCTActionSheet: ead415a8470cd3552f8cadce3b9b32e0d52e46a7
@@ -400,12 +411,13 @@ SPEC CHECKSUMS:
   React-RCTText: 1aa0fd4251b108777dd6218eb92d3613514b150f
   React-RCTVibration: b630e8fd023809796d47917d27caa343ade0678d
   ReactCommon: 6d0c6086911f7bf87b8406a92bb2ec66aeefd2e1
+  RNDeviceInfo: b6e650fbd234732c759544218657d549b4339038
   RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
   RNReanimated: b5ccb50650ba06f6e749c7c329a1bc3ae0c88b43
   RNScreens: 62211832af51e0aebcf6e8c36bcf7dd65592f244
   RNSVG: ce9d996113475209013317e48b05c21ee988d42e
   Yoga: 5d62aa8f4e862e282e19a25865ef8124c70f2711
 
-PODFILE CHECKSUM: 6cbf9508324812ad531cf32e7ff23e0b2a4e883d
+PODFILE CHECKSUM: bffdf95333a7a04706549810fa81548519209962
 
 COCOAPODS: 1.9.1

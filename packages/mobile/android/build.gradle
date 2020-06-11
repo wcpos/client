@@ -7,6 +7,7 @@ buildscript {
         compileSdkVersion = 29
         targetSdkVersion = 29
         kotlin_version = '1.3.31'
+        androidXCore = '1.3.0'
     }
     repositories {
         google()
