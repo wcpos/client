@@ -78,8 +78,9 @@ import com.android.build.OutputFile
 project.ext.react = [
     bundleAssetName: "index.android.bundle",
     cliPath: "../../node_modules/react-native/local-cli/cli.js",
-    entryFile: "packages/mobile/index.js",
-    enableHermes: true,  // clean and rebuild if changing: cd android && ./gradlew clean
+    entryFile: "index.js",
+    // root: "../../../../",
+    enableHermes: false,  // clean and rebuild if changing: cd android && ./gradlew clean
 ]
 
 apply from: "../../../../node_modules/react-native/react.gradle"
