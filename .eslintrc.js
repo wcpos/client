@@ -21,6 +21,7 @@ module.exports = {
 		'import/extensions': ['error', 'never'],
 		'spaced-comment': ['error', 'always', { markers: ['/'] }],
 		'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+		'no-underscore-dangle': ['error', { allowAfterThis: true }],
 		'react/prop-types': 'off',
 		'react/destructuring-assignment:': 'off',
 		'react/jsx-indent': [2, 'tab'],
