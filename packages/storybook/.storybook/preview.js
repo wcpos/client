@@ -4,8 +4,9 @@ import { addDecorator, addParameters } from '@storybook/react';
 import { create } from '@storybook/theming';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
-import { ThemeProvider } from 'styled-components/native';
-import { defaultTheme } from '@wcpos/common/src/lib/theme';
+// import { ThemeProvider } from 'styled-components/native';
+// import { defaultTheme } from '@wcpos/common/src/lib/theme';
+import { ThemeProvider } from '@wcpos/common/src/hooks/use-theme';
 
 // import '@wcpos/common/src/fonts/fonts.css';
 
@@ -53,7 +54,7 @@ addParameters({
 });
 
 addDecorator((story) => (
-	<ThemeProvider theme={defaultTheme}>
+	<ThemeProvider>
 		<React.Suspense fallback={<ActivityIndicator />}>{story()}</React.Suspense>
 	</ThemeProvider>
 ));
