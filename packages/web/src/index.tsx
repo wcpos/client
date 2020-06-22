@@ -9,4 +9,5 @@ AppRegistry.registerComponent('wcpos', () => App);
 
 AppRegistry.runApplication('wcpos', {
 	rootTag: document.getElementById('root'),
+	initialProps: (window as any).initialProps,
 });

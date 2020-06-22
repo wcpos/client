@@ -285,7 +285,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `/Users/kilbot/Projects/wcpos-client/node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `/Users/kilbot/Projects/wcpos-client/node_modules/react-native/ReactCommon/jsinspector`)
   - "react-native-netinfo (from `../../../node_modules/@react-native-community/netinfo`)"
-  - react-native-safe-area-context (from `../../../node_modules/react-native-safe-area-context`)
+  - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - react-native-webview (from `../../../node_modules/react-native-webview`)
   - React-RCTActionSheet (from `/Users/kilbot/Projects/wcpos-client/node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `/Users/kilbot/Projects/wcpos-client/node_modules/react-native/Libraries/NativeAnimation`)
@@ -300,7 +300,7 @@ DEPENDENCIES:
   - RNDeviceInfo (from `../../../node_modules/react-native-device-info`)
   - RNGestureHandler (from `../../../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../../../node_modules/react-native-reanimated`)
-  - RNScreens (from `../../../node_modules/react-native-screens`)
+  - RNScreens (from `../node_modules/react-native-screens`)
   - RNSVG (from `../../../node_modules/react-native-svg`)
   - Yoga (from `/Users/kilbot/Projects/wcpos-client/node_modules/react-native/ReactCommon/yoga`)
 
@@ -344,7 +344,7 @@ EXTERNAL SOURCES:
   react-native-netinfo:
     :path: "../../../node_modules/@react-native-community/netinfo"
   react-native-safe-area-context:
-    :path: "../../../node_modules/react-native-safe-area-context"
+    :path: "../node_modules/react-native-safe-area-context"
   react-native-webview:
     :path: "../../../node_modules/react-native-webview"
   React-RCTActionSheet:
@@ -374,7 +374,7 @@ EXTERNAL SOURCES:
   RNReanimated:
     :path: "../../../node_modules/react-native-reanimated"
   RNScreens:
-    :path: "../../../node_modules/react-native-screens"
+    :path: "../node_modules/react-native-screens"
   RNSVG:
     :path: "../../../node_modules/react-native-svg"
   Yoga:

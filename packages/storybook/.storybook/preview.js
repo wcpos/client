@@ -1,5 +1,5 @@
 import React from 'react';
-import { ActivityIndicator } from 'react-native';
+import { ActivityIndicator, View } from 'react-native';
 import { addDecorator, addParameters } from '@storybook/react';
 import { create } from '@storybook/theming';
 import { withKnobs } from '@storybook/addon-knobs';
@@ -54,9 +54,11 @@ addParameters({
 });
 
 addDecorator((story) => (
-	<ThemeProvider>
-		<React.Suspense fallback={<ActivityIndicator />}>{story()}</React.Suspense>
-	</ThemeProvider>
+	<React.Suspense fallback={<ActivityIndicator />}>
+		<ThemeProvider>
+			<View style={{ padding: '3em', flexDirection: 'row' }}>{story()}</View>
+		</ThemeProvider>
+	</React.Suspense>
 ));
 addDecorator(withKnobs);
 addDecorator(withInfo);
