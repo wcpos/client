@@ -261,8 +261,16 @@ PODS:
     - React
   - RNScreens (2.9.0):
     - React
+  - RNSentry (1.4.5):
+    - React
+    - Sentry (~> 5.1.4)
+  - RNSqlite2 (1.0.0):
+    - React
   - RNSVG (12.1.0):
     - React
+  - Sentry (5.1.5):
+    - Sentry/Core (= 5.1.5)
+  - Sentry/Core (5.1.5)
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -301,12 +309,15 @@ DEPENDENCIES:
   - RNGestureHandler (from `../../../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../../../node_modules/react-native-reanimated`)
   - RNScreens (from `../../../node_modules/react-native-screens`)
+  - "RNSentry (from `../../../node_modules/@sentry/react-native`)"
+  - RNSqlite2 (from `../../../node_modules/react-native-sqlite-2`)
   - RNSVG (from `../../../node_modules/react-native-svg`)
   - Yoga (from `/Users/kilbot/Projects/wcpos-client/node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
     - boost-for-react-native
+    - Sentry
 
 EXTERNAL SOURCES:
   BVLinearGradient:
@@ -375,6 +386,10 @@ EXTERNAL SOURCES:
     :path: "../../../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../../../node_modules/react-native-screens"
+  RNSentry:
+    :path: "../../../node_modules/@sentry/react-native"
+  RNSqlite2:
+    :path: "../../../node_modules/react-native-sqlite-2"
   RNSVG:
     :path: "../../../node_modules/react-native-svg"
   Yoga:
@@ -415,7 +430,10 @@ SPEC CHECKSUMS:
   RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
   RNReanimated: b5ccb50650ba06f6e749c7c329a1bc3ae0c88b43
   RNScreens: c526239bbe0e957b988dacc8d75ac94ec9cb19da
+  RNSentry: 0a70359ddacbfb9b1cbbb0971e54065b9f70ac57
+  RNSqlite2: 038cbebb953f80432db480c5ac5fd8ae427f8446
   RNSVG: ce9d996113475209013317e48b05c21ee988d42e
+  Sentry: e73af5462d1e7978c571aa2fdb861053938d7efd
   Yoga: 5d62aa8f4e862e282e19a25865ef8124c70f2711
 
 PODFILE CHECKSUM: bffdf95333a7a04706549810fa81548519209962
