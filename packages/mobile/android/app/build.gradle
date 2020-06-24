@@ -203,7 +203,6 @@ dependencies {
     
     implementation project(':react-native-reanimated')
     implementation project(':react-native-gesture-handler')
-    implementation project(':watermelondb')
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
       exclude group:'com.facebook.fbjni'

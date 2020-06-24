@@ -21,7 +21,7 @@
 		"clean": "yarn workspaces run clean && yarn cache clean && shx rm -rf yarn.lock && rm -rf node_modules",
 		"version": "yarn workspaces run version --no-git-tag-version --new-version $npm_package_version && yarn workspace @wcpos/mobile postversion",
 		"postversion": "git push --tags && yarn publish . --tag $npm_package_version && git push && echo \"Successfully released version $npm_package_version!\"",
-		"postinstall": "patch-package && cd packages/mobile/ios && pod install",
+		"postinstall": "cd packages/mobile/ios && pod install",
 		"jest": "jest --coverage --silent",
 		"test": "yarn jest"
 	},
@@ -46,7 +46,6 @@
 		"eslint-plugin-react-hooks": "4.0.4",
 		"eslint-plugin-react-native": "3.8.1",
 		"jest": "26.0.1",
-		"patch-package": "6.2.2",
 		"postinstall-postinstall": "2.1.0",
 		"prettier": "2.0.5",
 		"shx": "0.3.2"

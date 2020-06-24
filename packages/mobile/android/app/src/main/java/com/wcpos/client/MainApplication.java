@@ -14,8 +14,6 @@ import com.facebook.react.ReactPackage;
 // import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 
-import com.nozbe.watermelondb.WatermelonDBPackage;
-
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
@@ -34,7 +32,6 @@ public class MainApplication extends Application implements ReactApplication {
       // Packages that cannot be autolinked yet can be added manually here, for example:
       // packages.add(new ReanimatedPackage());
       // packages.add(new RNGestureHandlerPackage());
-      packages.add(new WatermelonDBPackage());
       return packages;
     }
 

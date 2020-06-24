@@ -53,8 +53,6 @@ public class ReactNativeFlipper {
             databaseFiles.add(files[i]);
           }
 
-//          String watermelondb = context.getDatabasePath("wcpos-sites.db").getPath().replace("/databases", "");
-//          databaseFiles.add(new File(watermelondb));
           return databaseFiles;
         }
       })));

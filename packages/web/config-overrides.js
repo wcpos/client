@@ -6,6 +6,8 @@ const {
 	addWebpackAlias,
 	addWebpackModuleRule,
 	addBundleVisualizer,
+	addWebpackResolve,
+	setWebpackTarget,
 } = require('customize-cra');
 const path = require('path');
 
@@ -41,5 +43,26 @@ module.exports = override(
 		exclude: /node_modules/,
 		use: [{ loader: '@svgr/webpack' }],
 	}),
-	addBundleVisualizer({ openAnalyzer: false })
+	addBundleVisualizer({ openAnalyzer: false }),
+	// note: we're using web build process for desktop/electron
+	process.env.PLATFORM === 'electron' &&
+		addWebpackResolve({
+			extensions: [
+				'.electron.js',
+				'.electron.ts',
+				'.electron.tsx',
+				'.web.mjs',
+				'.mjs',
+				'.web.js',
+				'.js',
+				'.web.ts',
+				'.ts',
+				'.web.tsx',
+				'.tsx',
+				'.json',
+				'.web.jsx',
+				'.jsx',
+			],
+		})
+	// process.env.PLATFORM === 'electron' && setWebpackTarget('electron-renderer')
 );

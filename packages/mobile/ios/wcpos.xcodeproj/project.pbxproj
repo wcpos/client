@@ -11,7 +11,6 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		617FDA4F2463F99D00CA6A7F /* WooCommercePOS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 617FDA4E2463F99D00CA6A7F /* WooCommercePOS.ttf */; };
 		617FDA522463FA7D00CA6A7F /* Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617FDA512463FA7D00CA6A7F /* Swift.swift */; };
 		6AFDB0112490C0D50C781B3C /* libPods-wcpos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFB043DF81030D3EBBFC7F5 /* libPods-wcpos.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -25,13 +24,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = wcpos;
-		};
-		61FBA833249255800056E4CD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 617FDA532463FB5C00CA6A7F /* WatermelonDB.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6E660D5E213BCCD300189354;
-			remoteInfo = WatermelonDB;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -48,10 +40,8 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = wcpos/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = wcpos/main.m; sourceTree = "<group>"; };
 		24E5340B7D3F5D327D857BB4 /* Pods-wcpos-wcposTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wcpos-wcposTests.debug.xcconfig"; path = "Target Support Files/Pods-wcpos-wcposTests/Pods-wcpos-wcposTests.debug.xcconfig"; sourceTree = "<group>"; };
-		617FDA4E2463F99D00CA6A7F /* WooCommercePOS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = WooCommercePOS.ttf; path = ../../../common/src/fonts/WooCommercePOS.ttf; sourceTree = "<group>"; };
 		617FDA502463FA7C00CA6A7F /* wcpos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wcpos-Bridging-Header.h"; sourceTree = "<group>"; };
 		617FDA512463FA7D00CA6A7F /* Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift.swift; sourceTree = "<group>"; };
-		617FDA532463FB5C00CA6A7F /* WatermelonDB.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WatermelonDB.xcodeproj; path = "../../../node_modules/@nozbe/watermelondb/native/ios/WatermelonDB.xcodeproj"; sourceTree = "<group>"; };
 		6FFB043DF81030D3EBBFC7F5 /* libPods-wcpos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wcpos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = wcpos/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BAE8E8B19AE6E448FA88F87 /* Pods-wcpos-wcposTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wcpos-wcposTests.release.xcconfig"; path = "Target Support Files/Pods-wcpos-wcposTests/Pods-wcpos-wcposTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,23 +129,13 @@
 		617FDA4D2463F95200CA6A7F /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				617FDA4E2463F99D00CA6A7F /* WooCommercePOS.ttf */,
 			);
 			path = fonts;
-			sourceTree = "<group>";
-		};
-		61FBA830249255800056E4CD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				61FBA834249255800056E4CD /* libWatermelonDB.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				617FDA532463FB5C00CA6A7F /* WatermelonDB.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -258,12 +238,6 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 61FBA830249255800056E4CD /* Products */;
-					ProjectRef = 617FDA532463FB5C00CA6A7F /* WatermelonDB.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* wcpos */,
@@ -271,16 +245,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		61FBA834249255800056E4CD /* libWatermelonDB.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libWatermelonDB.a;
-			remoteRef = 61FBA833249255800056E4CD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
@@ -296,7 +260,6 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				617FDA4F2463F99D00CA6A7F /* WooCommercePOS.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
