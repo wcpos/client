@@ -18,7 +18,7 @@
 		"analyze:ios": "react-native-bundle-visualizer --platform ios --entry-file ./index.js --reset-cache"
 	},
 	"dependencies": {
-		"@react-native-community/netinfo": "5.9.3",
+		"@react-native-community/netinfo": "5.9.4",
 		"@sentry/react-native": "1.4.5",
 		"base-64": "0.1.0",
 		"events": "3.1.0",

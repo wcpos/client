@@ -187,7 +187,7 @@ PODS:
     - React-cxxreact (= 0.63.0-rc.1)
     - React-jsi (= 0.63.0-rc.1)
   - React-jsinspector (0.63.0-rc.1)
-  - react-native-netinfo (5.9.3):
+  - react-native-netinfo (5.9.4):
     - React
   - react-native-safe-area-context (3.0.6):
     - React
@@ -413,7 +413,7 @@ SPEC CHECKSUMS:
   React-jsi: a968acc454a107677da6027d2111221f57765de9
   React-jsiexecutor: c40a9c0e687bd7a44cc0a616ff4592a823732a0d
   React-jsinspector: 655f32d922ffb180714c0bec652e7e0923b5a5dd
-  react-native-netinfo: 1b8691be19549f020d0757b40aca4f355cafeeec
+  react-native-netinfo: cd479ab1b67cdd1cb1403a99ecdb24190a6dd7ef
   react-native-safe-area-context: e22a8ca00f758273d2408953965cb8db67da7925
   react-native-webview: 40bbeb6d011226f34cb83f845aeb0fdf515cfc5f
   React-RCTActionSheet: ead415a8470cd3552f8cadce3b9b32e0d52e46a7
