@@ -189,9 +189,9 @@ PODS:
   - React-jsinspector (0.63.0-rc.1)
   - react-native-netinfo (5.9.4):
     - React
-  - react-native-safe-area-context (3.0.6):
+  - react-native-safe-area-context (3.0.7):
     - React
-  - react-native-webview (10.3.1):
+  - react-native-webview (10.3.2):
     - React
   - React-RCTActionSheet (0.63.0-rc.1):
     - React-Core/RCTActionSheetHeaders (= 0.63.0-rc.1)
@@ -261,7 +261,7 @@ PODS:
     - React
   - RNScreens (2.9.0):
     - React
-  - RNSentry (1.4.5):
+  - RNSentry (1.5.0):
     - React
     - Sentry (~> 5.1.4)
   - RNSqlite2 (1.0.0):
@@ -414,8 +414,8 @@ SPEC CHECKSUMS:
   React-jsiexecutor: c40a9c0e687bd7a44cc0a616ff4592a823732a0d
   React-jsinspector: 655f32d922ffb180714c0bec652e7e0923b5a5dd
   react-native-netinfo: cd479ab1b67cdd1cb1403a99ecdb24190a6dd7ef
-  react-native-safe-area-context: e22a8ca00f758273d2408953965cb8db67da7925
-  react-native-webview: 40bbeb6d011226f34cb83f845aeb0fdf515cfc5f
+  react-native-safe-area-context: ef6f16c66b0797ecae1bf86c103dfb3dc16fc33d
+  react-native-webview: 679b6f400176e2ea8a785acf7ae16cf282e7d1eb
   React-RCTActionSheet: ead415a8470cd3552f8cadce3b9b32e0d52e46a7
   React-RCTAnimation: 627dc8ad905b206c9bf10e9527079ef754b6a5dc
   React-RCTBlob: e70ce946cee9d400c5bfb0e8668dd11db852fa5a
@@ -430,7 +430,7 @@ SPEC CHECKSUMS:
   RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
   RNReanimated: b5ccb50650ba06f6e749c7c329a1bc3ae0c88b43
   RNScreens: c526239bbe0e957b988dacc8d75ac94ec9cb19da
-  RNSentry: 0a70359ddacbfb9b1cbbb0971e54065b9f70ac57
+  RNSentry: edba19169f665609fb092ba5eaf4be3c0776f50a
   RNSqlite2: 038cbebb953f80432db480c5ac5fd8ae427f8446
   RNSVG: ce9d996113475209013317e48b05c21ee988d42e
   Sentry: e73af5462d1e7978c571aa2fdb861053938d7efd
