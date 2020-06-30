@@ -23,9 +23,9 @@
     "react-dom": "16.13.1"
   },
   "devDependencies": {
-    "@babel/core": "7.10.3",
+    "@babel/core": "7.10.4",
     "babel-loader": "8.1.0",
-    "metro-react-native-babel-preset": "0.59.0",
+    "metro-react-native-babel-preset": "0.60.0",
     "react-scripts": "3.4.1"
   }
 }
