@@ -3623,10 +3623,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-native@0.62.14":
-  version "0.62.14"
-  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.62.14.tgz#13ce7dab136bb124b6f394fe7510442557b16d29"
-  integrity sha512-ItBgiEQks2Mid6GsiLBx75grNH0glaKemTK9V7G+vSnvP+Zk3x1Wr+aTy4dJxRPPMg14DAJyYePLZwj2cigXbw==
+"@types/react-native@0.62.15":
+  version "0.62.15"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.62.15.tgz#32c1f879a3817ca710361d42e2e651407e576df4"
+  integrity sha512-w8Css9gHMHdoo6SZo7OzJwoyleZvDJk4PZh0zc/A4oGF9Q8yrQCJryhx/2i4TNhLVFSuay5keTdD1R4C8qJNiQ==
   dependencies:
     "@types/react" "*"
 
@@ -8296,10 +8296,10 @@ eslint-plugin-react@7.19.0:
     string.prototype.matchall "^4.0.2"
     xregexp "^4.3.0"
 
-eslint-plugin-react@7.20.2:
-  version "7.20.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.20.2.tgz#b0d72abcd94c59c842338aa09c800808219ea77d"
-  integrity sha512-J3BdtsPNbcF/CG9HdyLx7jEtC7tuODODGldkS9P1zU2WMoHPdcsN2enUopgIaec5f9eYhSFI5zQAaWA/dgv2zw==
+eslint-plugin-react@7.20.3:
+  version "7.20.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.20.3.tgz#0590525e7eb83890ce71f73c2cf836284ad8c2f1"
+  integrity sha512-txbo090buDeyV0ugF3YMWrzLIUqpYTsWSDZV9xLSmExE1P/Kmgg9++PD931r+KEWS66O1c9R4srLVVHmeHpoAg==
   dependencies:
     array-includes "^3.1.1"
     array.prototype.flatmap "^1.2.3"
@@ -10125,10 +10125,10 @@ hyphenate-style-name@^1.0.2, hyphenate-style-name@^1.0.3:
   resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.3.tgz#097bb7fa0b8f1a9cf0bd5c734cf95899981a9b48"
   integrity sha512-EcuixamT82oplpoJ2XU4pDtKGWQ7b00CD9f1ug9IaQ3p1bkHMiKCZ9ut9QDI6qsa6cpUuB+A/I+zLtdNK4n2DQ==
 
-i18next@19.5.1:
-  version "19.5.1"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-19.5.1.tgz#d5fdc7b2dafd1a183f2188d65dfdb78ef9f35264"
-  integrity sha512-e6lGMiTyb51F9PPInUTTDg8YbwcWXZYX18svaX2NUUWEphJKP7oG5HMlbZ+K84AXqw4AeBnwRrOlS9ickqcCBg==
+i18next@19.5.2:
+  version "19.5.2"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-19.5.2.tgz#0db0293704b2bb73caa8b54ef4a9ff211aef8ee0"
+  integrity sha512-gkUpnWt+y3Yuz6Lp6VV0VPxJ8oOr/6YQ7PeUkEOBY/u/fE2RqxvoCNTJVhBiuJySWwf4cbtWjmlASoFqf1Y1cg==
   dependencies:
     "@babel/runtime" "^7.10.1"
 
@@ -12511,6 +12511,11 @@ lodash.memoize@^4.1.2:
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
 
+lodash.merge@^4.6.1:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
+  integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
+
 lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
@@ -13891,7 +13896,7 @@ object-copy@^0.1.0:
     define-property "^0.2.5"
     kind-of "^3.0.3"
 
-object-hash@^2.0.1:
+object-hash@^2.0.1, object-hash@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/object-hash/-/object-hash-2.0.3.tgz#d12db044e03cd2ca3d77c0570d87225b02e1e6ea"
   integrity sha512-JPKn0GMu+Fa3zt3Bmr66JhokJU5BaNBIh4ZeTlaCBzrBsOeXzwcKKAK1tbLiPKgvwmPXsDvvLHoWh5Bm7ofIYg==
@@ -17296,6 +17301,16 @@ rx-lite@*, rx-lite@^4.0.8:
   resolved "https://registry.yarnpkg.com/rx-lite/-/rx-lite-4.0.8.tgz#0b1e11af8bc44836f04a6407e92da42467b79444"
   integrity sha1-Cx4Rr4vESDbwSmQH6S2kJGe3lEQ=
 
+rxdb-utils@2.0.0-beta.2:
+  version "2.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/rxdb-utils/-/rxdb-utils-2.0.0-beta.2.tgz#46c459036888ce2198bc4c57fc89b335386386a7"
+  integrity sha512-0XYy+JGCl6QgFX3o6RMWFG6KKwmFi8ISSrlkp6QNfZsuiSqmLAKbTcSWrPquUzgza10BZBt+d9Vx0RC6oOi/vw==
+  dependencies:
+    lodash.flattendeep "^4.4.0"
+    lodash.merge "^4.6.1"
+    object-hash "^2.0.3"
+    uuid "^7.0.2"
+
 rxdb@9.3.0:
   version "9.3.0"
   resolved "https://registry.yarnpkg.com/rxdb/-/rxdb-9.3.0.tgz#88ad72838da81c20558f7e9a6dcc6c717995f6f1"
@@ -19348,7 +19363,7 @@ uuid@^3.0.1, uuid@^3.1.0, uuid@^3.3.2:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
-uuid@^7.0.3:
+uuid@^7.0.2, uuid@^7.0.3:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-7.0.3.tgz#c5c9f2c8cf25dc0a372c4df1441c41f5bd0c680b"
   integrity sha512-DPSke0pXhTZgoF/d+WSt2QaKMCFSfx7QegxEWT+JOuHF5aWrKEn0G+ztjuJg/gG8/ItK+rbPCD/yNv8yyih6Cg==

@@ -43,6 +43,7 @@ module.exports = {
 		'react-hooks/rules-of-hooks': 'warn',
 		'react-hooks/exhaustive-deps': 'warn',
 		'prettier/prettier': 'error',
+		camelcase: 'off',
 	},
 	settings: {
 		'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
