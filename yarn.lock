@@ -2390,10 +2390,10 @@
     "@sentry/utils" "5.19.0"
     tslib "^1.9.3"
 
-"@sentry/electron@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@sentry/electron/-/electron-1.3.0.tgz#02bc5ab7d16e579cd048cdbaaed93b43584aef2d"
-  integrity sha512-9oNJg371A/Djk03KVBHj9BgqYCscKxzScYKlM4AYR+BxYQ3LLsZLLeD9Mkdc0hGnOszCRmO5jXRjBVYz1JkJcA==
+"@sentry/electron@1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@sentry/electron/-/electron-1.3.1.tgz#94fee28fc623083aa351eda11868fe70f229502c"
+  integrity sha512-Ec13RFiJYoq6lRAgWPnVT0eXM+pQYAVPWb4gqT1c8QHHogCyZMDD0casbZxXP9uh9RiOeVMuQQWo5urfbgSQpg==
   dependencies:
     "@sentry/browser" "~5.13.2"
     "@sentry/core" "~5.13.2"
@@ -2942,7 +2942,7 @@
   dependencies:
     lodash "^4.17.15"
 
-"@storybook/node-logger@*", "@storybook/node-logger@5.3.19":
+"@storybook/node-logger@5.3.19":
   version "5.3.19"
   resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-5.3.19.tgz#c414e4d3781aeb06298715220012f552a36dff29"
   integrity sha512-hKshig/u5Nj9fWy0OsyU04yqCxr0A9pydOHIassr4fpLAaePIN2YvqCqE2V+TxQHjZUnowSSIhbXrGt0DI5q2A==
@@ -2954,12 +2954,11 @@
     pretty-hrtime "^1.0.3"
     regenerator-runtime "^0.13.3"
 
-"@storybook/preset-create-react-app@3.1.2":
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/@storybook/preset-create-react-app/-/preset-create-react-app-3.1.2.tgz#7413186cf2843fc2a49cd65e59c4380a72ad93ce"
-  integrity sha512-MjOus6mH/F/TikTPR3lWiuaR6hhhray2Yr2jV++Qg1/fS3yyADTyNZQZyc+TOc+SdKNTZ706H8+zn7RcjD9vGg==
+"@storybook/preset-create-react-app@3.1.3":
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/@storybook/preset-create-react-app/-/preset-create-react-app-3.1.3.tgz#4a38c0a513c036a6dce631284e1e9c5e92929f98"
+  integrity sha512-AY19mq8RblQvd/TfE3OSBnLbk0vsAywAG4J96cDXAYWJkJuqzQkgfTpejah4xhqP6gsHa4PUqZu1mM7G/DIdSQ==
   dependencies:
-    "@storybook/node-logger" "*"
     "@types/babel__core" "^7.1.7"
     "@types/webpack" "^4.41.13"
     babel-plugin-react-docgen "^4.1.0"
@@ -8348,10 +8347,10 @@ eslint-visitor-keys@^1.0.0, eslint-visitor-keys@^1.1.0, eslint-visitor-keys@^1.2
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.2.0.tgz#74415ac884874495f78ec2a97349525344c981fa"
   integrity sha512-WFb4ihckKil6hu3Dp798xdzSfddwKKU3+nGniKF6HfeW6OLd2OUDEPP7TcHtB5+QXOKg2s6B2DaMPE1Nn/kxKQ==
 
-eslint@7.3.1:
-  version "7.3.1"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.3.1.tgz#76392bd7e44468d046149ba128d1566c59acbe19"
-  integrity sha512-cQC/xj9bhWUcyi/RuMbRtC3I0eW8MH0jhRELSvpKYkWep3C6YZ2OkvcvJVUeO6gcunABmzptbXBuDoXsjHmfTA==
+eslint@7.4.0:
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.4.0.tgz#4e35a2697e6c1972f9d6ef2b690ad319f80f206f"
+  integrity sha512-gU+lxhlPHu45H3JkEGgYhWhkR9wLHHEXC9FbWFnTlEkbKyZKWgWRLgf61E8zWmBuI6g5xKBph9ltg3NtZMVF8g==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.10.0"
@@ -10125,10 +10124,10 @@ hyphenate-style-name@^1.0.2, hyphenate-style-name@^1.0.3:
   resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.3.tgz#097bb7fa0b8f1a9cf0bd5c734cf95899981a9b48"
   integrity sha512-EcuixamT82oplpoJ2XU4pDtKGWQ7b00CD9f1ug9IaQ3p1bkHMiKCZ9ut9QDI6qsa6cpUuB+A/I+zLtdNK4n2DQ==
 
-i18next@19.5.3:
-  version "19.5.3"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-19.5.3.tgz#1e8416072c1e1cd0c83afab430e94957a5165a74"
-  integrity sha512-R7ie0TdTpBhybNa2eDhTkJKSCDe7pPsHx6/q0RTtHPFw1mrFp0PEtpUqOPy4KaIRwJc8n2N/phTp+HiOBP5Biw==
+i18next@19.5.4:
+  version "19.5.4"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-19.5.4.tgz#86e4b44993621f39ab53f95a24afa69caea0a452"
+  integrity sha512-fty+v8v0Unn8KufOajoZ6OR5aKme/lP+BdbT5rirTXE8wdj6LbsbG9DwtI9VtMeru1PEf+L530Cq3IRmovMJGQ==
   dependencies:
     "@babel/runtime" "^7.10.1"
 
