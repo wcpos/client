@@ -5,7 +5,7 @@
 	"scripts": {
 		"start": "env-cmd react-native start",
 		"test": "jest",
-		"ios": "react-native run-ios --simulator=\"iPad 12.1\"",
+		"ios": "yarn pod:install && react-native run-ios --simulator=\"iPad 12.1\"",
 		"android": "react-native run-android",
 		"tsc": "tsc",
 		"clean": "shx rm -rf ios/build && rm -rf android/build && rm -rf node_modules && watchman watch-del-all",
@@ -15,7 +15,8 @@
 		"xcode": "open ios/wcpos.xcodeproj",
 		"postversion": "react-native-version --never-amend",
 		"analyze:android": "react-native-bundle-visualizer --platform android --entry-file ./index.js --reset-cache",
-		"analyze:ios": "react-native-bundle-visualizer --platform ios --entry-file ./index.js --reset-cache"
+		"analyze:ios": "react-native-bundle-visualizer --platform ios --entry-file ./index.js --reset-cache",
+		"pod:install": "cd ios/ && pod install --verbose --no-repo-update"
 	},
 	"dependencies": {
 		"@react-native-community/netinfo": "5.9.4",
@@ -23,7 +24,7 @@
 		"base-64": "0.1.0",
 		"events": "3.1.0",
 		"pouchdb-adapter-react-native-sqlite": "2.0.0",
-		"react-native": "0.63.0-rc.1",
+		"react-native": "0.63.0",
 		"react-native-device-info": "5.6.1",
 		"react-native-gesture-handler": "1.6.1",
 		"react-native-linear-gradient": "2.5.6",
@@ -40,7 +41,7 @@
 		"babel-plugin-transform-inline-environment-variables": "0.4.3",
 		"env-cmd": "10.1.0",
 		"metro-react-native-babel-preset": "0.60.0",
-		"react-native-bundle-visualizer": "^2.1.1",
+		"react-native-bundle-visualizer": "^2.2.1",
 		"react-native-svg-transformer": "^0.14.3",
 		"react-native-version": "4.0.0"
 	}
