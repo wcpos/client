@@ -1,5 +1,4 @@
 apply plugin: "com.android.application"
-apply plugin: 'kotlin-android'
 
 import com.android.build.OutputFile
 
@@ -135,10 +134,13 @@ def keystorePropertiesFile = rootProject.file("local.properties")
 def keystoreProperties = new Properties()
 
 // Load your keystore.properties file into the keystoreProperties object.
-keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+if(keystorePropertiesFile) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
+    // compileSdkVersion rootProject.ext.compileSdkVersion
+    compileSdkVersion 29
     // buildToolsVersion rootProject.ext.buildToolsVersion
 
     compileOptions {
