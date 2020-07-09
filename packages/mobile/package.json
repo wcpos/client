@@ -16,7 +16,8 @@
 		"postversion": "react-native-version --never-amend",
 		"analyze:android": "react-native-bundle-visualizer --platform android --entry-file ./index.js --reset-cache",
 		"analyze:ios": "react-native-bundle-visualizer --platform ios --entry-file ./index.js --reset-cache",
-		"pod:install": "cd ios/ && pod install --verbose --no-repo-update"
+		"pod:install": "cd ios/ && pod install --verbose --no-repo-update",
+		"build:android:release": "cd android && ./gradlew assembleRelease"
 	},
 	"dependencies": {
 		"@react-native-community/netinfo": "5.9.4",

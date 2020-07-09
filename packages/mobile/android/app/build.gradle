@@ -127,6 +127,16 @@ def jscFlavor = 'org.webkit:android-jsc:+'
  */
 def enableHermes = project.ext.react.get("enableHermes", true);
 
+// Create a variable called keystorePropertiesFile, and initialize it to your
+// keystore.properties file, in the rootProject folder.
+def keystorePropertiesFile = rootProject.file("local.properties")
+
+// Initialize a new Properties() object called keystoreProperties.
+def keystoreProperties = new Properties()
+
+// Load your keystore.properties file into the keystoreProperties object.
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     // buildToolsVersion rootProject.ext.buildToolsVersion
@@ -161,12 +171,10 @@ android {
             keyPassword 'android'
         }
         release {
-            if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
-                storeFile file(MYAPP_UPLOAD_STORE_FILE)
-                storePassword MYAPP_UPLOAD_STORE_PASSWORD
-                keyAlias MYAPP_UPLOAD_KEY_ALIAS
-                keyPassword MYAPP_UPLOAD_KEY_PASSWORD
-            }
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+            keyPassword keystoreProperties['keyPassword']
+            keyAlias keystoreProperties['keyAlias']
         }
     }
 
@@ -197,6 +205,30 @@ android {
         }
     }
 }
+
+// sentry {
+//     // Disables or enables the automatic configuration of ProGuard
+//     // for Sentry.  This injects a default config for ProGuard so
+//     // you don't need to do it manually.
+//     autoProguardConfig true
+
+//     // Enables or disables the automatic upload of mapping files
+//     // during a build.  If you disable this, you'll need to manually
+//     // upload the mapping files with sentry-cli when you do a release.
+//     autoUpload true
+
+//     // Disables or enables the automatic configuration of Native Symbols
+//     // for Sentry. This executes sentry-cli automatically so
+//     // you don't need to do it manually.
+//     // Default is disabled.
+//     uploadNativeSymbols false
+
+//     // Does or doesn't include the source code of native code for Sentry.
+//     // This executes sentry-cli with the --include-sources param. automatically so
+//     // you don't need to do it manually.
+//     // Default is disabled.
+//     includeNativeSources false
+// }
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
