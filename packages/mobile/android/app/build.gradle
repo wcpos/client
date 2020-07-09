@@ -134,7 +134,7 @@ def keystorePropertiesFile = rootProject.file("local.properties")
 def keystoreProperties = new Properties()
 
 // Load your keystore.properties file into the keystoreProperties object.
-if(keystorePropertiesFile) {
+if(keystorePropertiesFile.exists()) {
     keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 }
 
