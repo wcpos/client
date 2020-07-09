@@ -1,6 +1,7 @@
 # Client app for WooCommerce POS
 
-[![Build status](https://build.appcenter.ms/v0.1/apps/e9e9ebcd-54c6-416e-9da2-d18abef5d94f/branches/master/badge)](https://appcenter.ms)
+Android [![Build status](https://build.appcenter.ms/v0.1/apps/e9e9ebcd-54c6-416e-9da2-d18abef5d94f/branches/master/badge)](https://appcenter.ms)
+iOS [![Build status](https://build.appcenter.ms/v0.1/apps/021bef99-000c-4b12-b6fb-dbadf4a8eee5/branches/master/badge)](https://appcenter.ms)
 
 ### Installation
 
