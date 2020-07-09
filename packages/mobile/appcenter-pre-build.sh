@@ -7,9 +7,9 @@ yarn install
 
 if [ -e "${GRADLE_FILE}" ]
 then
-    echo "##[warning][Pre-Build Action] - native_modules.gradle file found - ok!"
+    echo "##[info][Pre-Build Action] - native_modules.gradle file found - ok!"
 else
     echo "##[error][Pre-Build Action] - native_modules.gradle file not found!"
-	ls ${APPCENTER_SOURCE_DIRECTORY}/node_modules/@react-native-community/
-    ls ${APPCENTER_SOURCE_DIRECTORY}/node_modules/@react-native-community/cli-platform-android
+	# ls ${APPCENTER_SOURCE_DIRECTORY}/node_modules/@react-native-community/
+    # ls ${APPCENTER_SOURCE_DIRECTORY}/node_modules/@react-native-community/cli-platform-android
 fi 
