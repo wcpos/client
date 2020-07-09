@@ -5,7 +5,7 @@
 	"scripts": {
 		"start": "env-cmd react-native start",
 		"test": "jest",
-		"ios": "yarn pod:install && react-native run-ios --simulator=\"iPad 12.1\"",
+		"ios": "env-cmd yarn pod:install && react-native run-ios --simulator=\"iPad 12.1\"",
 		"android": "react-native run-android",
 		"tsc": "tsc",
 		"clean": "shx rm -rf ios/build && rm -rf android/build && rm -rf node_modules && watchman watch-del-all",

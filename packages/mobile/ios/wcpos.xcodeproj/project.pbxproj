@@ -5,13 +5,13 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* wcposTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* wcposTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		617FDA522463FA7D00CA6A7F /* Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617FDA512463FA7D00CA6A7F /* Swift.swift */; };
-		61F788C724A38DFA0096ADD1 /* libRNSentry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F788C424A38D680096ADD1 /* libRNSentry.a */; };
 		6AFDB0112490C0D50C781B3C /* libPods-wcpos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFB043DF81030D3EBBFC7F5 /* libPods-wcpos.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		F714CF0E65C89CCBF597E8E1 /* libPods-wcpos-wcposTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0184E1DCC750E6D4FACB4560 /* libPods-wcpos-wcposTests.a */; };
@@ -24,20 +24,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = wcpos;
-		};
-		61F788C324A38D680096ADD1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 61F788BD24A38D680096ADD1 /* RNSentry.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 134814201AA4EA6300B7C361;
-			remoteInfo = RNSentry;
-		};
-		61F788C524A38D680096ADD1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 61F788BD24A38D680096ADD1 /* RNSentry.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 274692C321B4414400BF91A8;
-			remoteInfo = "RNSentry-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -56,7 +42,6 @@
 		24E5340B7D3F5D327D857BB4 /* Pods-wcpos-wcposTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wcpos-wcposTests.debug.xcconfig"; path = "Target Support Files/Pods-wcpos-wcposTests/Pods-wcpos-wcposTests.debug.xcconfig"; sourceTree = "<group>"; };
 		617FDA502463FA7C00CA6A7F /* wcpos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wcpos-Bridging-Header.h"; sourceTree = "<group>"; };
 		617FDA512463FA7D00CA6A7F /* Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift.swift; sourceTree = "<group>"; };
-		61F788BD24A38D680096ADD1 /* RNSentry.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSentry.xcodeproj; path = "../../../node_modules/@sentry/react-native/ios/RNSentry.xcodeproj"; sourceTree = "<group>"; };
 		6FFB043DF81030D3EBBFC7F5 /* libPods-wcpos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wcpos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = wcpos/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BAE8E8B19AE6E448FA88F87 /* Pods-wcpos-wcposTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wcpos-wcposTests.release.xcconfig"; path = "Target Support Files/Pods-wcpos-wcposTests/Pods-wcpos-wcposTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61F788C724A38DFA0096ADD1 /* libRNSentry.a in Frameworks */,
 				6AFDB0112490C0D50C781B3C /* libPods-wcpos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,19 +133,9 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
-		61F788BE24A38D680096ADD1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				61F788C424A38D680096ADD1 /* libRNSentry.a */,
-				61F788C624A38D680096ADD1 /* libRNSentry-tvOS.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				61F788BD24A38D680096ADD1 /* RNSentry.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -225,7 +199,6 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				0CA9F827EFEC84A118D41372 /* [CP] Copy Pods Resources */,
-				E41F4E0BAB0249E3A2E8D2AB /* Upload Debug Symbols to Sentry */,
 			);
 			buildRules = (
 			);
@@ -265,12 +238,6 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 61F788BE24A38D680096ADD1 /* Products */;
-					ProjectRef = 61F788BD24A38D680096ADD1 /* RNSentry.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* wcpos */,
@@ -278,23 +245,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		61F788C424A38D680096ADD1 /* libRNSentry.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRNSentry.a;
-			remoteRef = 61F788C324A38D680096ADD1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		61F788C624A38D680096ADD1 /* libRNSentry-tvOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libRNSentry-tvOS.a";
-			remoteRef = 61F788C524A38D680096ADD1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
@@ -328,7 +278,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export SENTRY_PROPERTIES=sentry.properties\nexport EXTRA_PACKAGER_ARGS=\"--sourcemap-output $DERIVED_FILE_DIR/main.jsbundle.map\"\nexport NODE_BINARY=node\n../node_modules/@sentry/cli/bin/sentry-cli react-native xcode ../node_modules/react-native/scripts/react-native-xcode.sh\n";
+			shellScript = "export SENTRY_PROPERTIES=sentry.properties\nexport EXTRA_PACKAGER_ARGS=\"--sourcemap-output $DERIVED_FILE_DIR/main.jsbundle.map\"\nexport NODE_BINARY=node\n../../../node_modules/@sentry/cli/bin/sentry-cli react-native xcode ../../../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		0CA9F827EFEC84A118D41372 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -391,20 +341,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		E41F4E0BAB0249E3A2E8D2AB /* Upload Debug Symbols to Sentry */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Upload Debug Symbols to Sentry";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export SENTRY_PROPERTIES=sentry.properties\n../node_modules/@sentry/cli/bin/sentry-cli upload-dsym";
 		};
 		F5BD237FC9A6584E4A7D8960 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
