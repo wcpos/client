@@ -8,6 +8,7 @@ then
     echo "##[warning][Pre-Build Action] - native_modules.gradle file found - ok!"
 else
     echo "##[error][Pre-Build Action] - native_modules.gradle file not found!"
+		echo ${APPCENTER_SOURCE_DIRECTORY}/node_modules/@react-native-community/*/
 fi 
 
 npm i @react-native-community/cli-platform-android
@@ -17,4 +18,5 @@ then
     echo "##[warning][Pre-Build Action] - native_modules.gradle file found - ok!"
 else
     echo "##[error][Pre-Build Action] - native_modules.gradle file not found!"
+		echo ${APPCENTER_SOURCE_DIRECTORY}/node_modules/@react-native-community/*/
 fi 
