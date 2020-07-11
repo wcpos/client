@@ -240,7 +240,7 @@ PODS:
   - React-jsinspector (0.63.0)
   - react-native-netinfo (5.9.4):
     - React
-  - react-native-safe-area-context (3.0.7):
+  - react-native-safe-area-context (3.1.1):
     - React
   - react-native-webview (10.3.2):
     - React
@@ -304,7 +304,7 @@ PODS:
     - React-Core (= 0.63.0)
     - React-cxxreact (= 0.63.0)
     - React-jsi (= 0.63.0)
-  - RNDeviceInfo (5.6.1):
+  - RNDeviceInfo (5.6.2):
     - React
   - RNGestureHandler (1.6.1):
     - React
@@ -507,7 +507,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 0e0cb4e170ca72d4bb1179843d08dcbea3d100ac
   React-jsinspector: fc661eff8edbfb7e22119382c13f33bcadde0f3c
   react-native-netinfo: cd479ab1b67cdd1cb1403a99ecdb24190a6dd7ef
-  react-native-safe-area-context: ef6f16c66b0797ecae1bf86c103dfb3dc16fc33d
+  react-native-safe-area-context: 344b969c45af3d8464d36e8dea264942992ef033
   react-native-webview: 679b6f400176e2ea8a785acf7ae16cf282e7d1eb
   React-RCTActionSheet: aadd91a1d6cbfae50dd41f140004f816e9e47ade
   React-RCTAnimation: 7fa2ef6c0ef1e3f0b7d2261c827ec94412deb5e6
@@ -519,7 +519,7 @@ SPEC CHECKSUMS:
   React-RCTText: ba503bf4cce41881ca258ba789c33e017955efdd
   React-RCTVibration: 77ab1cf4a5eb854b88ad5ed3e9d8509ed124525e
   ReactCommon: f63556ee9e41e9802257228237e5e660451a03cf
-  RNDeviceInfo: b6e650fbd234732c759544218657d549b4339038
+  RNDeviceInfo: ed8557a8bd6443cbc0ab5d375e6808a38a279744
   RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
   RNReanimated: b5ccb50650ba06f6e749c7c329a1bc3ae0c88b43
   RNScreens: c526239bbe0e957b988dacc8d75ac94ec9cb19da

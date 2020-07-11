@@ -26,11 +26,11 @@
 		"events": "3.1.0",
 		"pouchdb-adapter-react-native-sqlite": "2.0.0",
 		"react-native": "0.63.0",
-		"react-native-device-info": "5.6.1",
+		"react-native-device-info": "5.6.2",
 		"react-native-gesture-handler": "1.6.1",
 		"react-native-linear-gradient": "2.5.6",
 		"react-native-reanimated": "1.9.0",
-		"react-native-safe-area-context": "3.0.7",
+		"react-native-safe-area-context": "3.1.1",
 		"react-native-screens": "2.9.0",
 		"react-native-sqlite-2": "3.0.1",
 		"react-native-svg": "12.1.0",
@@ -38,7 +38,7 @@
 		"rxdb": "9.3.0"
 	},
 	"devDependencies": {
-		"@types/react-native": "0.62.17",
+		"@types/react-native": "0.62.18",
 		"babel-plugin-transform-inline-environment-variables": "0.4.3",
 		"env-cmd": "10.1.0",
 		"metro-react-native-babel-preset": "0.60.0",
