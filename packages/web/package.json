@@ -24,7 +24,7 @@
 		"customize-cra": "1.0.0",
 		"react-app-rewired": "2.1.6",
 		"react-scripts": "3.4.1",
-		"typescript": "3.9.6",
+		"typescript": "3.9.7",
 		"webpack-bundle-analyzer": "3.8.0"
 	},
 	"browserslist": [
