@@ -14,13 +14,13 @@
 		"react": "16.13.1",
 		"react-art": "16.13.1",
 		"react-dom": "16.13.1",
-		"react-native-web": "0.13.3",
+		"react-native-web": "0.13.4",
 		"worker-loader": "2.0.0"
 	},
 	"devDependencies": {
 		"@types/react": "16.9.43",
 		"@types/react-dom": "16.9.8",
-		"babel-plugin-react-native-web": "0.13.3",
+		"babel-plugin-react-native-web": "0.13.4",
 		"customize-cra": "1.0.0",
 		"react-app-rewired": "2.1.6",
 		"react-scripts": "3.4.1",

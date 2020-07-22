@@ -25,7 +25,7 @@
   "devDependencies": {
     "@babel/core": "7.10.5",
     "babel-loader": "8.1.0",
-    "metro-react-native-babel-preset": "0.60.0",
+    "metro-react-native-babel-preset": "0.61.0",
     "react-scripts": "3.4.1"
   }
 }
