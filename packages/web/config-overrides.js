@@ -22,9 +22,9 @@ module.exports = override(
 	addDecoratorsLegacy(),
 	...addBabelPlugins(
 		// 'babel-plugin-react-native-web',
-		'@babel/plugin-proposal-class-properties',
-		'@babel/plugin-proposal-optional-chaining',
-		'@babel/plugin-proposal-nullish-coalescing-operator'
+		'@babel/plugin-proposal-class-properties'
+		// '@babel/plugin-proposal-optional-chaining', // create-react-app 3.3
+		// '@babel/plugin-proposal-nullish-coalescing-operator' // create-react-app 3.3
 		// '@babel/plugin-proposal-export-default-from'
 	),
 	babelInclude([
