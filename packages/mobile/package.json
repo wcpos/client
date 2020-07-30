@@ -21,7 +21,7 @@
 	},
 	"dependencies": {
 		"@react-native-community/netinfo": "5.9.5",
-		"@sentry/react-native": "1.6.3",
+		"@sentry/react-native": "1.7.0",
 		"base-64": "0.1.0",
 		"events": "3.2.0",
 		"pouchdb-adapter-react-native-sqlite": "2.0.0",
@@ -34,7 +34,7 @@
 		"react-native-screens": "2.9.0",
 		"react-native-sqlite-2": "3.1.0",
 		"react-native-svg": "12.1.0",
-		"react-native-webview": "10.3.2",
+		"react-native-webview": "10.3.3",
 		"rxdb": "9.4.0"
 	},
 	"devDependencies": {
