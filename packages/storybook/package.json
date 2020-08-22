@@ -9,23 +9,23 @@
     "clean": "shx rm -rf dist && rm -rf node_modules"
   },
   "dependencies": {
-    "@storybook/addon-actions": "5.3.19",
-    "@storybook/addon-essentials": "5.3.19",
+    "@storybook/addon-actions": "6.0.16",
+    "@storybook/addon-essentials": "6.0.16",
     "@storybook/addon-info": "5.3.19",
-    "@storybook/addon-knobs": "5.3.19",
+    "@storybook/addon-knobs": "6.0.16",
     "@storybook/addon-notes": "5.3.19",
     "@storybook/addon-ondevice-actions": "5.3.19",
     "@storybook/addon-ondevice-knobs": "5.3.19",
     "@storybook/preset-create-react-app": "3.1.4",
-    "@storybook/react": "5.3.19",
+    "@storybook/react": "6.0.16",
     "@storybook/react-native": "5.3.19",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
   "devDependencies": {
-    "@babel/core": "7.10.5",
+    "@babel/core": "7.11.4",
     "babel-loader": "8.1.0",
-    "metro-react-native-babel-preset": "0.61.0",
-    "react-scripts": "3.4.1"
+    "metro-react-native-babel-preset": "0.63.0",
+    "react-scripts": "3.4.3"
   }
 }
