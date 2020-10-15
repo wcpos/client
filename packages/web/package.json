@@ -11,16 +11,16 @@
 		"clean": "shx rm -rf dist && rm -rf node_modules"
 	},
 	"dependencies": {
-		"react": "16.13.1",
+		"react": "16.14.0",
 		"react-art": "16.13.1",
-		"react-dom": "16.13.1",
-		"react-native-web": "0.13.13",
-		"worker-loader": "3.0.3"
+		"react-dom": "16.14.0",
+		"react-native-web": "0.14.1",
+		"worker-loader": "3.0.4"
 	},
 	"devDependencies": {
-		"@types/react": "16.9.49",
+		"@types/react": "16.9.52",
 		"@types/react-dom": "16.9.8",
-		"babel-plugin-react-native-web": "0.13.13",
+		"babel-plugin-react-native-web": "0.14.1",
 		"customize-cra": "1.0.0",
 		"react-app-rewired": "2.1.6",
 		"react-scripts": "3.4.3",

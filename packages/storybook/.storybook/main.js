@@ -1,8 +1,10 @@
+const path = require('path');
+
 module.exports = {
 	stories: ['../../common/src/**/*.stories.tsx'],
 
 	addons: [
-		'@storybook/preset-create-react-app',
+		// '@storybook/preset-create-react-app',
 		'@storybook/addon-essentials',
 		'@storybook/addon-actions/register',
 		'@storybook/addon-knobs/register',
@@ -10,6 +12,13 @@ module.exports = {
 	],
 
 	webpackFinal: async (config) => {
+		// const fs = require('fs');
+		// fs.writeFile('test.txt', JSON.stringify(config, null, ' '), function (err, data) {
+		// 	if (err) {
+		// 		return console.log(err);
+		// 	}
+		// 	console.log(data);
+		// });
 		// console.log(config.module.rules[3].oneOf[2]);
 		/** @TODO create less fragile way to remove svg from default config */
 		// config.module.rules[2] = {
@@ -27,6 +36,20 @@ module.exports = {
 		});
 
 		config.module.rules.push({
+			test: /\.js$/,
+			include: [path.resolve(__dirname, '../../../node_modules/react-native-gesture-handler/')],
+			use: {
+				loader: 'babel-loader',
+				options: {
+					cacheDirectory: false,
+					presets: [
+						['module:metro-react-native-babel-preset', { disableImportExportTransform: true }],
+					],
+				},
+			},
+		});
+
+		config.module.rules.push({
 			test: /\.svg$/,
 			exclude: /node_modules/,
 			use: [{ loader: '@svgr/webpack' }],
@@ -34,7 +57,7 @@ module.exports = {
 
 		//
 		config.resolve.alias = config.resolve.alias || {};
-		// config.resolve.alias['react-native'] = 'react-native-web'; // added by create-react-app config
+		config.resolve.alias['react-native'] = 'react-native-web'; // added by create-react-app config
 		config.resolve.alias['react-native-linear-gradient'] = 'react-native-web-linear-gradient';
 
 		// resolve .web.js before .js
