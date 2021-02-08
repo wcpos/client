@@ -16,15 +16,15 @@
 		"@storybook/addon-notes": "5.3.21",
 		"@storybook/addon-ondevice-actions": "5.3.23",
 		"@storybook/addon-ondevice-knobs": "5.3.23",
-		"@storybook/preset-create-react-app": "3.1.4",
+		"@storybook/preset-create-react-app": "3.1.5",
 		"@storybook/react": "5.3.21",
 		"@storybook/react-native": "5.3.23",
 		"react": "16.14.0",
 		"react-dom": "16.14.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.12.1",
-		"babel-loader": "8.1.0",
+		"@babel/core": "7.12.13",
+		"babel-loader": "8.2.2",
 		"metro-react-native-babel-preset": "0.63.0",
 		"react-scripts": "3.4.3"
 	}
