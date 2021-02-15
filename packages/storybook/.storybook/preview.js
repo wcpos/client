@@ -1,17 +1,23 @@
 import React from 'react';
 import { ActivityIndicator, View } from 'react-native';
 import { addDecorator, addParameters } from '@storybook/react';
+import { DocsContainer, DocsPage } from '@storybook/addon-docs/blocks';
 import { create } from '@storybook/theming';
 import { withKnobs } from '@storybook/addon-knobs';
-import { withInfo } from '@storybook/addon-info';
+// import { withInfo } from '@storybook/addon-info';
 // import { ThemeProvider } from 'styled-components/native';
 // import { defaultTheme } from '@wcpos/common/src/lib/theme';
 import { ThemeProvider } from '@wcpos/common/src/hooks/use-theme';
+import decorator from './decorator'
 
 // import '@wcpos/common/src/fonts/fonts.css';
 
 // Option defaults
 addParameters({
+	docs: {
+    container: DocsContainer,
+    page: DocsPage,
+  },
 	options: {
 		/**
 		 * display the top-level grouping as a "root" in the sidebar
@@ -53,12 +59,6 @@ addParameters({
 	},
 });
 
-addDecorator((story) => (
-	<React.Suspense fallback={<ActivityIndicator />}>
-		<ThemeProvider>
-			<View style={{ padding: '3em', flexDirection: 'row' }}>{story()}</View>
-		</ThemeProvider>
-	</React.Suspense>
-));
+addDecorator(decorator);
 addDecorator(withKnobs);
-addDecorator(withInfo);
+// addDecorator(withInfo);
