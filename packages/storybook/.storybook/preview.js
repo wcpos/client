@@ -1,13 +1,6 @@
-import React from 'react';
-import { ActivityIndicator, View } from 'react-native';
 import { addDecorator, addParameters } from '@storybook/react';
 import { DocsContainer, DocsPage } from '@storybook/addon-docs/blocks';
 import { create } from '@storybook/theming';
-import { withKnobs } from '@storybook/addon-knobs';
-// import { withInfo } from '@storybook/addon-info';
-// import { ThemeProvider } from 'styled-components/native';
-// import { defaultTheme } from '@wcpos/common/src/lib/theme';
-import { ThemeProvider } from '@wcpos/common/src/hooks/use-theme';
 import decorator from './decorator'
 
 // import '@wcpos/common/src/fonts/fonts.css';
@@ -37,28 +30,8 @@ addParameters({
 			// To control appearance:
 			// brandImage: 'http://url.of/some.svg',
 		}),
-		/**
-		 * regex for finding the hierarchy separator
-		 * @example:
-		 *   null - turn off hierarchy
-		 *   /\// - split by `/`
-		 *   /\./ - split by `.`
-		 *   /\/|\./ - split by `/` or `.`
-		 * @type {Regex}
-		 */
-		hierarchySeparator: /\/|\./,
-		/**
-		 * regex for finding the hierarchy root separator
-		 * @example:
-		 *   null - turn off multiple hierarchy roots
-		 *   /\|/ - split by `|`
-		 * @type {Regex}
-		 */
-		hierarchyRootSeparator: /\|/,
 		panelPosition: 'bottom',
 	},
 });
 
 addDecorator(decorator);
-addDecorator(withKnobs);
-// addDecorator(withInfo);

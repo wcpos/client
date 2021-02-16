@@ -6,9 +6,7 @@ module.exports = {
 	addons: [
 		'@storybook/preset-create-react-app',
 		'@storybook/addon-essentials',
-		'@storybook/addon-actions/register',
-		'@storybook/addon-knobs/register',
-		'@storybook/addon-notes/register',
+		'@storybook/addon-actions',
 	],
 
 	webpackFinal: async (config) => {

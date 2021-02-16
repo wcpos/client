@@ -41,7 +41,7 @@
 		"@types/react-native": "0.63.49",
 		"babel-plugin-transform-inline-environment-variables": "0.4.3",
 		"env-cmd": "10.1.0",
-		"metro-react-native-babel-preset": "0.65.0",
+		"metro-react-native-babel-preset": "0.65.1",
 		"react-native-bundle-visualizer": "2.2.1",
 		"react-native-svg-transformer": "0.14.3",
 		"react-native-version": "4.0.0"
