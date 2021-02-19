@@ -44,6 +44,10 @@ module.exports = {
 		'react-hooks/exhaustive-deps': 'warn',
 		'prettier/prettier': 'error',
 		camelcase: 'off',
+		'@typescript-eslint/explicit-module-boundary-types': 'off',
+		'no-use-before-define': 'off',
+		'@typescript-eslint/no-use-before-define': 'warn',
+		'import/prefer-default-export': 'off',
 	},
 	settings: {
 		'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
