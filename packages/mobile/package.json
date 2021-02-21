@@ -20,8 +20,8 @@
 		"build:android:release": "cd android && ./gradlew assembleRelease"
 	},
 	"dependencies": {
-		"@react-native-community/netinfo": "5.9.10",
-		"@sentry/react-native": "2.2.0",
+		"@react-native-community/netinfo": "6.0.0",
+		"@sentry/react-native": "2.2.1",
 		"base-64": "1.0.0",
 		"events": "3.2.0",
 		"pouchdb-adapter-react-native-sqlite": "3.0.1",
