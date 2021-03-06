@@ -48,7 +48,8 @@ module.exports = {
 		'no-use-before-define': 'off',
 		'@typescript-eslint/no-use-before-define': 'warn',
 		'import/prefer-default-export': 'off',
-		'react/require-default-props': 0
+		'react/require-default-props': 0,
+		'no-underscore-dangle': 0,
 	},
 	settings: {
 		'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],

@@ -73,6 +73,7 @@ module.exports = {
 	// A map from regular expressions to module names that allow to stub out resources with a single module
 	moduleNameMapper: {
 		'\\.svg$': '<rootDir>/packages/common/jest/__mocks__/svgr-mock.js',
+		'@wcpos/common/src/lib/platform': '<rootDir>/packages/common/jest/__mocks__/platform.js',
 	},
 
 	// An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
