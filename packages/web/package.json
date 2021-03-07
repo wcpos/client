@@ -20,7 +20,7 @@
 		"worker-loader": "3.0.8"
 	},
 	"devDependencies": {
-		"@types/react": "17.0.2",
+		"@types/react": "17.0.3",
 		"@types/react-dom": "17.0.1",
 		"babel-plugin-react-native-web": "0.15.0",
 		"customize-cra": "1.0.0",

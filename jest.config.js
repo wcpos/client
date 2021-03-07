@@ -74,6 +74,10 @@ module.exports = {
 	moduleNameMapper: {
 		'\\.svg$': '<rootDir>/packages/common/jest/__mocks__/svgr-mock.js',
 		'@wcpos/common/src/lib/platform': '<rootDir>/packages/common/jest/__mocks__/platform.js',
+		'@react-native-community/netinfo':
+			'<rootDir>/packages/common/jest/__mocks__/@react-native-community/netinfo.js',
+		'react-native-linear-gradient':
+			'<rootDir>/packages/common/jest/__mocks__/react-native-linear-gradient.js',
 	},
 
 	// An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
