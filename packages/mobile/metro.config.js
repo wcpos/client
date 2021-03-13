@@ -1,5 +1,5 @@
 const path = require('path');
-const blacklist = require('metro-config/src/defaults/blacklist');
+const exclusionList = require('metro-config/src/defaults/exclusionList');
 const defaultAssetExts = require('metro-config/src/defaults/defaults').assetExts;
 const defaultSourceExts = require('metro-config/src/defaults/defaults').sourceExts;
 
@@ -13,7 +13,7 @@ module.exports = {
 	resolver: {
 		assetExts: [...defaultAssetExts.filter((ext) => ext !== 'svg'), 'md'],
 		sourceExts: [...defaultSourceExts, 'svg'],
-		blacklistRE: blacklist([
+		blockList: exclusionList([
 			// prevent react-native conflict in project root or common directory
 			// new RegExp(path.resolve(__dirname, '../../node_modules/react-native') + '/.*'),
 			// new RegExp(path.resolve(__dirname, '../common/node_modules/react-native') + '/.*'),
