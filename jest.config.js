@@ -167,6 +167,8 @@ module.exports = {
 
 	// An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
 	transformIgnorePatterns: [
+		// ...defaults.testPathIgnorePatterns,
+		// 'node_modules',
 		'node_modules/(?!(react-native|react-native-webview|react-native-screens|react-native-gesture-handler|@react-navigation/.*|@react-native-community|react-native-iphone-x-helper|react-native-reanimated)/)',
 	],
 
