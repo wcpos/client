@@ -23,7 +23,7 @@
 		"postversion": "react-native-version --never-amend",
 		"analyze:android": "react-native-bundle-visualizer --platform android --entry-file ./index.js --reset-cache",
 		"analyze:ios": "react-native-bundle-visualizer --platform ios --entry-file ./index.js --reset-cache",
-		"pod:install": "cd ios/ && pod install --verbose --no-repo-update",
+		"pod:install": "cd ios/ && pod install",
 		"build:android:release": "cd android && ./gradlew assembleRelease"
 	},
 	"dependencies": {
@@ -42,11 +42,11 @@
 		"react-native-screens": "2.18.1",
 		"react-native-sqlite-2": "3.1.1",
 		"react-native-svg": "12.1.0",
-		"react-native-webview": "11.2.4",
+		"react-native-webview": "11.2.5",
 		"rxdb": "9.15.0"
 	},
 	"devDependencies": {
-		"@types/react-native": "0.63.51",
+		"@types/react-native": "0.63.52",
 		"babel-plugin-transform-inline-environment-variables": "0.4.3",
 		"env-cmd": "10.1.0",
 		"metro-react-native-babel-preset": "0.65.2",

@@ -1,11 +1,12 @@
 import React from 'react';
 import { ActivityIndicator, View } from 'react-native';
-import { ThemeProvider } from '@wcpos/common/src/hooks/use-theme';
+import { ThemeProvider } from 'styled-components/native';
+import getTheme from '@wcpos/common/src/themes';
 
 export default function (renderStory) {
 	return (
 		<React.Suspense fallback={<ActivityIndicator />}>
-	    <ThemeProvider>
+			<ThemeProvider theme={getTheme()}>
 		    <View style={{ padding: '3em', flexDirection: 'row' }}>{renderStory()}</View>
 	    </ThemeProvider>
 		</React.Suspense>
