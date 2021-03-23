@@ -13,15 +13,15 @@
 	"dependencies": {
 		"@wcpos/common": "0.0.1",
 		"random-token": "0.0.8",
-		"react": "17.0.1",
-		"react-art": "17.0.1",
-		"react-dom": "17.0.1",
+		"react": "17.0.2",
+		"react-art": "17.0.2",
+		"react-dom": "17.0.2",
 		"react-native-web": "0.15.0",
 		"worker-loader": "3.0.8"
 	},
 	"devDependencies": {
 		"@types/react": "17.0.3",
-		"@types/react-dom": "17.0.2",
+		"@types/react-dom": "17.0.3",
 		"babel-plugin-react-native-web": "0.15.0",
 		"customize-cra": "1.0.0",
 		"react-app-rewired": "2.1.8",
