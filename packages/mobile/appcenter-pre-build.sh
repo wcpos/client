@@ -6,8 +6,8 @@
 # LOCAL_CLI=${APPCENTER_SOURCE_DIRECTORY}/node_modules/react-native/local-cli/cli.js
 
 yarn install
-mkdir -p packages/mobile/node_modules/react-native/local-cli/
-cp node_modules/react-native/local-cli/cli.js packages/mobile/node_modules/react-native/local-cli/cli.js 
+mkdir -p ${APPCENTER_SOURCE_DIRECTORY}/packages/mobile/node_modules/react-native/local-cli/
+cp ${APPCENTER_SOURCE_DIRECTORY}/node_modules/react-native/local-cli/cli.js ${APPCENTER_SOURCE_DIRECTORY}/packages/mobile/node_modules/react-native/local-cli/cli.js 
 
 # if [ -e "${ANDROID_CLI}" ]
 # then
