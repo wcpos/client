@@ -75,11 +75,11 @@ import com.android.build.OutputFile
  */
 
 project.ext.react = [
-    bundleAssetName: "index.android.bundle",
+    // bundleAssetName: "index.android.bundle",
     // cliPath: "../../node_modules/react-native/local-cli/cli.js",
-    entryFile: "index.js",
+    // entryFile: "index.js",
     // root: "../../../../",
-    enableHermes: false,  // clean and rebuild if changing: cd android && ./gradlew clean
+    enableHermes: true,  // clean and rebuild if changing: cd android && ./gradlew clean
 ]
 
 project.ext.sentryCli = [
@@ -124,7 +124,7 @@ def jscFlavor = 'org.webkit:android-jsc:+'
  * on project.ext.react, JavaScript will not be compiled to Hermes Bytecode
  * and the benefits of using Hermes will therefore be sharply reduced.
  */
-def enableHermes = project.ext.react.get("enableHermes", false);
+def enableHermes = project.ext.react.get("enableHermes", true);
 
 // Create a variable called keystorePropertiesFile, and initialize it to your
 // keystore.properties file, in the rootProject folder.
