@@ -88,6 +88,7 @@ project.ext.sentryCli = [
 
 apply from: "../../../../node_modules/react-native/react.gradle"
 apply from: '../../../../node_modules/@sentry/react-native/sentry.gradle'
+apply from: '../../../../node_modules/react-native-unimodules/gradle.groovy'
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -249,6 +250,7 @@ dependencies {
     implementation project(':react-native-reanimated')
     implementation project(':react-native-gesture-handler')
     implementation project(':@sentry_react-native')	
+    addUnimodulesDependencies()
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
       exclude group:'com.facebook.fbjni'

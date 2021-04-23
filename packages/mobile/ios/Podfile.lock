@@ -270,13 +270,13 @@ PODS:
     - React-jsi (= 0.64.0)
     - React-perflogger (= 0.64.0)
   - React-jsinspector (0.64.0)
-  - react-native-get-random-values (1.6.0):
+  - react-native-get-random-values (1.7.0):
     - React-Core
   - react-native-netinfo (6.0.0):
     - React-Core
   - react-native-safe-area-context (3.2.0):
     - React-Core
-  - react-native-webview (11.3.2):
+  - react-native-webview (11.4.2):
     - React-Core
   - React-perflogger (0.64.0)
   - React-RCTActionSheet (0.64.0):
@@ -342,7 +342,7 @@ PODS:
     - React-cxxreact (= 0.64.0)
     - React-jsi (= 0.64.0)
     - React-perflogger (= 0.64.0)
-  - RNDeviceInfo (8.0.8):
+  - RNDeviceInfo (8.1.2):
     - React-Core
   - RNGestureHandler (1.10.3):
     - React-Core
@@ -375,14 +375,14 @@ PODS:
     - React-RCTVibration
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNScreens (3.1.0):
+  - RNScreens (3.1.1):
     - React-Core
-  - RNSentry (2.4.0):
+  - RNSentry (2.4.1):
     - React-Core
     - Sentry (= 6.1.4)
   - RNSqlite2 (3.3.0):
     - React-Core
-  - RNSVG (12.1.1-0):
+  - RNSVG (12.1.1):
     - React
   - Sentry (6.1.4):
     - Sentry/Core (= 6.1.4)
@@ -585,10 +585,10 @@ SPEC CHECKSUMS:
   React-jsi: 74341196d9547cbcbcfa4b3bbbf03af56431d5a1
   React-jsiexecutor: 06a9c77b56902ae7ffcdd7a4905f664adc5d237b
   React-jsinspector: 0ae35a37b20d5e031eb020a69cc5afdbd6406301
-  react-native-get-random-values: f0fc24a5887a3341589515a86282a574407b59e4
+  react-native-get-random-values: 237bffb1c7e05fb142092681531810a29ba53015
   react-native-netinfo: e849fc21ca2f4128a5726c801a82fc6f4a6db50d
   react-native-safe-area-context: f0906bf8bc9835ac9a9d3f97e8bde2a997d8da79
-  react-native-webview: 71567b6bf3d4e55914e580d720cc8f7df64af817
+  react-native-webview: 4c85a3e5de574ee8c2c0985b4bebbdd240f49304
   React-perflogger: 9c547d8f06b9bf00cb447f2b75e8d7f19b7e02af
   React-RCTActionSheet: 3080b6e12e0e1a5b313c8c0050699b5c794a1b11
   React-RCTAnimation: 3f96f21a497ae7dabf4d2f150ee43f906aaf516f
@@ -601,17 +601,17 @@ SPEC CHECKSUMS:
   React-RCTVibration: 0fd6b21751a33cb72fce1a4a33ab9678416d307a
   React-runtimeexecutor: cad74a1eaa53ee6e7a3620231939d8fe2c6afcf0
   ReactCommon: cfe2b7fd20e0dbd2d1185cd7d8f99633fbc5ff05
-  RNDeviceInfo: 41a8c8a41ae0e70d85cbe652cd5318150cb2cc40
+  RNDeviceInfo: 3266783bcb6aa4b0c785d6080a407f8a5fc68326
   RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
   RNReanimated: b8c8004b43446e3c2709fe64b2b41072f87428ad
-  RNScreens: 3ba2198ca3179f77f6158425fc31ba3c90a0d49f
-  RNSentry: b0d55027200c96f52e26b9bfb20296d47fc5051d
+  RNScreens: bd1523c3bde7069b8e958e5a16e1fc7722ad0bdd
+  RNSentry: 824a6a0ec885428163fe6827aa08014f9962f223
   RNSqlite2: df25f1fefd82da39a3f956504149fb32d23831fb
-  RNSVG: 1a8855adeb20c5beb0a808281608315fc1092d15
+  RNSVG: 551acb6562324b1d52a4e0758f7ca0ec234e278f
   Sentry: 9d055e2de30a77685e86b219acf02e59b82091fc
   Yoga: 8c8436d4171c87504c648ae23b1d81242bdf3bbf
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 4416f98c49d8b29e227f346707c6880aa9326bde
+PODFILE CHECKSUM: 1c58669ec3e58f54d667563a61fed9e7bd9b3985
 
 COCOAPODS: 1.10.1

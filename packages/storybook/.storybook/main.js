@@ -35,7 +35,10 @@ module.exports = {
 
 		config.module.rules.push({
 			test: /\.js$/,
-			include: [path.resolve(__dirname, '../../../node_modules/react-native-gesture-handler/')],
+			include: [
+				path.resolve(__dirname, '../../../node_modules/react-native-gesture-handler/'),
+				path.resolve(__dirname, '../../../node_modules/@unimodules/'),
+			],
 			use: {
 				loader: 'babel-loader',
 				options: {
