@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
 	stories: ['../../common/src/**/*.stories.tsx'],
@@ -30,12 +31,16 @@ module.exports = {
 			loader: 'babel-loader',
 			options: {
 				presets: ['module:metro-react-native-babel-preset'],
+				plugins: [
+					'react-native-reanimated/plugin',
+				]
 			},
 		});
 
 		config.module.rules.push({
 			test: /\.js$/,
 			include: [
+				path.resolve(__dirname, '../../../node_modules/react-native-reanimated/'),
 				path.resolve(__dirname, '../../../node_modules/react-native-gesture-handler/'),
 				path.resolve(__dirname, '../../../node_modules/@unimodules/'),
 			],
@@ -46,6 +51,9 @@ module.exports = {
 					presets: [
 						['module:metro-react-native-babel-preset', { disableImportExportTransform: true }],
 					],
+					plugins: [
+						'react-native-reanimated/plugin',
+					]
 				},
 			},
 		});
@@ -75,6 +83,13 @@ module.exports = {
 			'.json',
 			'.svg',
 		];
+
+		// https://github.com/formium/formik/issues/1607
+		config.plugins.push(
+			new webpack.DefinePlugin({
+				'__DEV__': process.env.NODE_ENV === 'development'
+			})
+		);
 
 		// winston logging to file
 		config.node = config.node || {};

@@ -8,7 +8,8 @@ import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactInstanceManager;
 
-import com.swmansion.reanimated.ReanimatedPackage;
+ import com.facebook.react.bridge.JSIModulePackage;
+  import com.swmansion.reanimated.ReanimatedJSIModulePackage;
 // import org.devio.rn.splashscreen.SplashScreenReactPackage;
 // import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.facebook.react.ReactNativeHost;
@@ -54,6 +55,11 @@ public class MainApplication extends MultiDexApplication implements ReactApplica
     @Override
     protected String getJSMainModuleName() {
       return "index";
+    }
+
+    @Override
+    protected JSIModulePackage getJSIModulePackage() {
+      return new ReanimatedJSIModulePackage();
     }
   };
 

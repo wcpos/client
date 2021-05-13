@@ -50,6 +50,7 @@ module.exports = {
 		'import/prefer-default-export': 'off',
 		'react/require-default-props': 0,
 		'no-underscore-dangle': 0,
+		'no-nested-ternary': 0,
 		// @TODO - fix this when updated https://github.com/benmosher/eslint-plugin-import/issues/1174
 		'import/no-extraneous-dependencies': 0,
 	},

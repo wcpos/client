@@ -7,9 +7,11 @@ const {
 	addWebpackModuleRule,
 	addBundleVisualizer,
 	addWebpackResolve,
+	addWebpackPlugin,
 	setWebpackTarget,
 } = require('customize-cra');
 const path = require('path');
+const webpack = require('webpack');
 
 const addWorkerLoader = () => (config) => {
 	config.output.globalObject = 'this';
@@ -44,6 +46,12 @@ module.exports = override(
 		exclude: /node_modules/,
 		use: [{ loader: '@svgr/webpack' }],
 	}),
+	addWebpackPlugin(
+		new webpack.DefinePlugin({
+			'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
+			__DEV__: process.env.NODE_ENV === 'production' || true,
+		})
+	),
 	addBundleVisualizer({ openAnalyzer: false }),
 	// note: we're using web build process for desktop/electron
 	process.env.PLATFORM === 'electron' &&
