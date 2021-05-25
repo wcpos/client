@@ -1,3 +1,5 @@
+const babelJest = require('babel-jest').default;
+
 const babelOptions = {
 	presets: [
 		// '@babel/preset-env',
@@ -11,4 +13,5 @@ const babelOptions = {
 	],
 };
 
-module.exports = require('babel-jest').createTransformer(babelOptions);
+const transformer = babelJest.createTransformer(babelOptions);
+module.exports = transformer;
