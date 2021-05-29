@@ -10,6 +10,11 @@ module.exports = {
 		'@storybook/addon-actions',
 	],
 
+	typescript: {
+		// @TODO remove this https://github.com/styleguidist/react-docgen-typescript/issues/356
+		reactDocgen: 'none',
+	},
+
 	webpackFinal: async (config) => {
 		// const fs = require('fs');
 		// fs.writeFile('test.txt', JSON.stringify(config, null, ' '), function (err, data) {

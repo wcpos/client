@@ -1,6 +1,7 @@
 const babelJest = require('babel-jest').default;
 
 const babelOptions = {
+	rootMode: 'upward',
 	presets: [
 		// '@babel/preset-env',
 		// '@babel/preset-react',
