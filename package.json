@@ -42,7 +42,7 @@
 		"eslint-plugin-react": "7.24.0",
 		"eslint-plugin-react-hooks": "4.2.0",
 		"eslint-plugin-react-native": "3.11.0",
-		"jest": "27.0.3",
+		"jest": "27.0.4",
 		"prettier": "2.3.0",
 		"shx": "0.3.3"
 	},

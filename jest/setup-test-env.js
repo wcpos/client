@@ -14,6 +14,12 @@ jest.mock('react-native-reanimated', () => {
 	return Reanimated;
 });
 
+// jest.mock('react-native-gesture-handler', () => {
+// 	return {
+// 		Direction: {},
+// 	};
+// });
+
 jest.mock('react-native-device-info', () => mockRNDeviceInfo);
 
 jest.mock('@sentry/react-native', () => ({
@@ -22,7 +28,5 @@ jest.mock('@sentry/react-native', () => ({
 
 // mock database adapter, react-native-sqlite-2 will cause error
 jest.mock('@wcpos/common/src/database/adapter');
-
-jest.mock('react-native-gesture-handler/RNGestureHandlerModule');
 
 // beforeAll(() => {});
