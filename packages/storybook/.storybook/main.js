@@ -12,7 +12,7 @@ module.exports = {
 
 	typescript: {
 		// @TODO remove this https://github.com/styleguidist/react-docgen-typescript/issues/356
-		reactDocgen: 'none',
+		// reactDocgen: 'none',
 	},
 
 	webpackFinal: async (config) => {

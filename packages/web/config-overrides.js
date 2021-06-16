@@ -9,6 +9,7 @@ const {
 	addWebpackResolve,
 	addWebpackPlugin,
 	setWebpackTarget,
+	getBabelLoader,
 } = require('customize-cra');
 const path = require('path');
 const webpack = require('webpack');
@@ -16,6 +17,27 @@ const webpack = require('webpack');
 const addWorkerLoader = () => (config) => {
 	config.output.globalObject = 'this';
 	config.module.rules.unshift({ test: /\.worker\.js$/, use: { loader: 'worker-loader' } });
+	return config;
+};
+
+/**
+ * https://github.com/welldone-software/why-did-you-render/issues/154#issuecomment-775744755
+ *
+ * Note: doesn't seem to make a difference?
+ */
+const addWhyDidYouRender = (plugin) => (config) => {
+	const { options } = getBabelLoader(config);
+
+	const originalPreset = options.presets.find((preset) =>
+		preset[0].includes('babel-preset-react-app')
+	);
+	if (originalPreset) {
+		Object.assign(originalPreset[1], {
+			development: true,
+			importSource: '@welldone-software/why-did-you-render',
+		});
+	}
+
 	return config;
 };
 
@@ -74,4 +96,5 @@ module.exports = override(
 			],
 		})
 	// process.env.PLATFORM === 'electron' && setWebpackTarget('electron-renderer')
+	// addWhyDidYouRender()
 );
