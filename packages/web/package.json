@@ -2,7 +2,7 @@
 	"name": "@wcpos/web",
 	"version": "0.0.1",
 	"private": true,
-	"homepage": "https://wcpos.github.io/client",
+	"homepage": "./",
 	"scripts": {
 		"start": "react-app-rewired start",
 		"build": "react-app-rewired build",
