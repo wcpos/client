@@ -20,27 +20,6 @@ const addWorkerLoader = () => (config) => {
 	return config;
 };
 
-/**
- * https://github.com/welldone-software/why-did-you-render/issues/154#issuecomment-775744755
- *
- * Note: doesn't seem to make a difference?
- */
-const addWhyDidYouRender = (plugin) => (config) => {
-	const { options } = getBabelLoader(config);
-
-	const originalPreset = options.presets.find((preset) =>
-		preset[0].includes('babel-preset-react-app')
-	);
-	if (originalPreset) {
-		Object.assign(originalPreset[1], {
-			development: true,
-			importSource: '@welldone-software/why-did-you-render',
-		});
-	}
-
-	return config;
-};
-
 module.exports = override(
 	addWorkerLoader(),
 	addDecoratorsLegacy(),
@@ -96,5 +75,4 @@ module.exports = override(
 			],
 		})
 	// process.env.PLATFORM === 'electron' && setWebpackTarget('electron-renderer')
-	// addWhyDidYouRender()
 );
