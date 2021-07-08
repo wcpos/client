@@ -16,6 +16,7 @@
 		"clean": "shx rm -rf build && rm -rf dist && rm -rf node_modules",
 		"compile": "tsc -b",
 		"build": "yarn build:base && yarn build:web && yarn build:web:post && yarn build:electron",
+		"build:github": "yarn build:base && yarn build:web && yarn build:web:post",
 		"build:base": "shx rm -rf build && rm -rf dist && yarn compile",
 		"build:electron": "electron-builder -mwl",
 		"build:skipweb": "yarn build:base && yarn build:web:post && yarn build:electron",
