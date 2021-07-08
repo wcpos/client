@@ -1,7 +1,7 @@
 {
 	"name": "@wcpos/desktop",
 	"description": "A simple front-end for taking WooCommerce orders at the Point of Sale.",
-	"version": "0.0.1",
+	"version": "1.0.0-beta.1",
 	"main": "dist/index.js",
 	"repository": "https://github.com/wcpos/client",
 	"private": true,
@@ -14,9 +14,10 @@
 		"start": "env-cmd concurrently --kill-others \"yarn start:web\" \"wait-on https://localhost:3000 && tsc -b && electron .\"",
 		"start:web": "yarn workspace @wcpos/web start",
 		"clean": "shx rm -rf build && rm -rf dist && rm -rf node_modules",
-		"prebuild": "yarn workspace @wcpos/web build && copyfiles -u 2 \"../web/build/**/*\" dist/cra/",
+		"prebuild": "yarn workspace @wcpos/web build && copyfiles -u 2 \"../web/build/**/*\" dist",
 		"build": "tsc -b",
-		"package": "electron-builder -mwl"
+		"package": "electron-builder -mwl",
+		"package:mac": "electron-builder -m"
 	},
 	"dependencies": {},
 	"devDependencies": {
@@ -31,7 +32,7 @@
 	"build": {
 		"appId": "com.wcpos.client",
 		"productName": "WooCommerce POS",
-		"copyright": "Copyright © 2019 ${author}",
+		"copyright": "Copyright © 2021 ${author}",
 		"extends": null,
 		"directories": {
 			"buildResources": "assets",
