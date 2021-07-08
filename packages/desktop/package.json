@@ -19,8 +19,7 @@
 		"package": "electron-builder -mwl",
 		"package:mac": "electron-builder -m"
 	},
-	"dependencies": {},
-	"devDependencies": {
+	"dependencies": {
 		"concurrently": "6.2.0",
 		"copyfiles": "^2.4.1",
 		"electron": "13.1.6",
