@@ -1,5 +1,6 @@
 // Modules to control application life and create native browser window
 import { app, BrowserWindow } from 'electron';
+import { autoUpdater } from 'electron-updater';
 import path from 'path';
 import { isDev } from './lib/electron-is-dev';
 
@@ -20,11 +21,11 @@ function createWindow() {
 
 	// and load the index.html of the app.
 	mainWindow.loadURL(
-		isDev ? 'https://localhost:3000' : `file://${path.join(__dirname, 'web/index.html')}`
+		isDev ? 'https://localhost:3000' : `file://${path.join(__dirname, 'build/index.html')}`
 	);
 
 	// Emitted when the window is closed.
-	mainWindow.on('closed', function() {
+	mainWindow.on('closed', function () {
 		// Dereference the window object, usually you would store windows
 		// in an array if your app supports multi windows, this is the time
 		// when you should delete the corresponding element.
@@ -33,8 +34,13 @@ function createWindow() {
 	});
 
 	//
-	mainWindow.on('page-title-updated', function(e) {
+	mainWindow.on('page-title-updated', function (e) {
 		e.preventDefault();
+	});
+
+	// check for updates
+	mainWindow.once('ready-to-show', () => {
+		autoUpdater.checkForUpdatesAndNotify();
 	});
 }
 
@@ -44,7 +50,7 @@ function createWindow() {
 app.on('ready', createWindow);
 
 // Quit when all windows are closed.
-app.on('window-all-closed', function() {
+app.on('window-all-closed', function () {
 	// On OS X it is common for applications and their menu bar
 	// to stay active until the user quits explicitly with Cmd + Q
 	if (process.platform !== 'darwin') {
@@ -52,7 +58,7 @@ app.on('window-all-closed', function() {
 	}
 });
 
-app.on('activate', function() {
+app.on('activate', function () {
 	// On OS X it's common to re-create a window in the app when the
 	// dock icon is clicked and there are no other windows open.
 	if (mainWindow === null) {
@@ -74,3 +80,13 @@ app.on('certificate-error', (event, webContents, url, error, certificate, callba
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
+autoUpdater.on('update-available', (args) => {
+	console.log(args);
+  mainWindow.webContents.send('update_available');
+});
+
+autoUpdater.on('update-downloaded', (args) => {
+	console.log(args);
+  mainWindow.webContents.send('update_downloaded');
+});
