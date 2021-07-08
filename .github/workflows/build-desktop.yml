@@ -1,9 +1,9 @@
 name: Desktop
 
 on:
-  push:
-    branches:
-      - electron-builder
+  release:
+    types:
+      - created
 
 jobs:
   build:
@@ -48,6 +48,7 @@ jobs:
           mac_certs: ${{ secrets.mac_certs }}
           mac_certs_password: ${{ secrets.mac_certs_password }}
 
+        env:
           # macOS notarization API key
           API_KEY_ID: ${{ secrets.notarization_api_key_id }}
           API_KEY_ISSUER_ID: ${{ secrets.notarization_api_key_issuer_id }}

@@ -1,5 +1,6 @@
 // Modules to control application life and create native browser window
 import { app, BrowserWindow } from 'electron';
+import { autoUpdater } from 'electron-updater';
 import path from 'path';
 import { isDev } from './lib/electron-is-dev';
 
@@ -35,6 +36,11 @@ function createWindow() {
 	//
 	mainWindow.on('page-title-updated', function (e) {
 		e.preventDefault();
+	});
+
+	// check for updates
+	mainWindow.once('ready-to-show', () => {
+		autoUpdater.checkForUpdatesAndNotify();
 	});
 }
 
@@ -74,3 +80,13 @@ app.on('certificate-error', (event, webContents, url, error, certificate, callba
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
+autoUpdater.on('update-available', (args) => {
+	console.log(args);
+  mainWindow.webContents.send('update_available');
+});
+
+autoUpdater.on('update-downloaded', (args) => {
+	console.log(args);
+  mainWindow.webContents.send('update_downloaded');
+});
