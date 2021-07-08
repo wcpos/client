@@ -11,21 +11,17 @@
 		"url": "https://wcpos.com"
 	},
 	"scripts": {
-		"start": "env-cmd concurrently --kill-others \"yarn start:web\" \"wait-on http://localhost:3000 && yarn compile && electron .\"",
-		"start:web": "pushd \"../web\" && yarn start && popd",
+		"start": "env-cmd concurrently --kill-others \"yarn start:web\" \"wait-on https://localhost:3000 && tsc -b && electron .\"",
+		"start:web": "yarn workspace @wcpos/web start",
 		"clean": "shx rm -rf build && rm -rf dist && rm -rf node_modules",
-		"compile": "tsc -b",
-		"build": "yarn build:base && yarn build:web && yarn build:web:post && yarn build:electron",
-		"build:github": "yarn build:base && yarn build:web && yarn build:web:post",
-		"build:base": "shx rm -rf build && rm -rf dist && yarn compile",
-		"build:electron": "electron-builder -mwl",
-		"build:skipweb": "yarn build:base && yarn build:web:post && yarn build:electron",
-		"build:web": "pushd \"../web\" && yarn build && popd",
-		"build:web:post": "shx cp -Rf ../web/dist dist/web"
+		"prebuild": "yarn workspace @wcpos/web build && copyfiles -u 2 \"../web/build/**/*\" dist/cra/",
+		"build": "tsc -b",
+		"package": "electron-builder -mwl"
 	},
 	"dependencies": {},
 	"devDependencies": {
 		"concurrently": "6.2.0",
+		"copyfiles": "^2.4.1",
 		"electron": "13.1.6",
 		"electron-builder": "22.11.7",
 		"electron-is-dev": "2.0.0",
