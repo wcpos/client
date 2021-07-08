@@ -9,7 +9,10 @@
 /coverage
 
 # production
-/build
+/build/*
+!/build/entitlements.mac.plist
+!/build/entitlements.mas.inherit.plist
+!/build/entitlements.mas.plist
 /dist
 
 # misc
