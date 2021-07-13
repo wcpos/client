@@ -28,7 +28,7 @@ jobs:
       run: yarn --frozen-lockfile
     
     - name: Build project
-      run: yarn web build
+      run: PUBLIC_URL="https://wcpos.github.io/client/" yarn web build
     
     # - name: Run tests
     #   run: npm run test
