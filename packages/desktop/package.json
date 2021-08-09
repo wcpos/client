@@ -24,7 +24,7 @@
 		"electron-updater": "^4.3.9"
 	},
 	"devDependencies": {
-		"concurrently": "6.2.0",
+		"concurrently": "6.2.1",
 		"copyfiles": "^2.4.1",
 		"electron": "13.1.8",
 		"electron-builder": "22.11.7",
