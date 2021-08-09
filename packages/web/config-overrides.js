@@ -8,8 +8,9 @@ const {
 	addBundleVisualizer,
 	addWebpackResolve,
 	addWebpackPlugin,
-	setWebpackTarget,
-	getBabelLoader,
+	// setWebpackTarget,
+	// getBabelLoader,
+	disableChunk,
 } = require('customize-cra');
 const path = require('path');
 const webpack = require('webpack');
@@ -55,6 +56,7 @@ module.exports = override(
 	),
 	addBundleVisualizer({ openAnalyzer: false }),
 	// note: we're using web build process for desktop/electron
+	process.env.PLATFORM !== 'electron' && process.env.NODE_ENV === 'production' && disableChunk(),
 	process.env.PLATFORM === 'electron' &&
 		addWebpackResolve({
 			extensions: [

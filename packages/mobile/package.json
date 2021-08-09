@@ -45,8 +45,8 @@
 		"react-native-sqlite-2": "3.4.0",
 		"react-native-svg": "12.1.1",
 		"react-native-unimodules": "^0.14.6",
-		"react-native-webview": "11.6.6",
-		"rxdb": "10.0.2"
+		"react-native-webview": "11.12.0",
+		"rxdb": "10.0.3"
 	},
 	"devDependencies": {
 		"@types/react-native": "0.64.12",
