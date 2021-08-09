@@ -1,24 +1,18 @@
 {
   "files": {
-    "main.css": "https://wcpos.github.io/client/static/css/main.9f26bd45.chunk.css",
-    "main.js": "https://wcpos.github.io/client/static/js/main.a3e1a696.chunk.js",
-    "main.js.map": "https://wcpos.github.io/client/static/js/main.a3e1a696.chunk.js.map",
-    "runtime-main.js": "https://wcpos.github.io/client/static/js/runtime-main.f25035d8.js",
-    "runtime-main.js.map": "https://wcpos.github.io/client/static/js/runtime-main.f25035d8.js.map",
-    "static/js/2.e19a928e.chunk.js": "https://wcpos.github.io/client/static/js/2.e19a928e.chunk.js",
-    "static/js/2.e19a928e.chunk.js.map": "https://wcpos.github.io/client/static/js/2.e19a928e.chunk.js.map",
-    "static/js/3.abb6bd53.chunk.js": "https://wcpos.github.io/client/static/js/3.abb6bd53.chunk.js",
-    "static/js/3.abb6bd53.chunk.js.map": "https://wcpos.github.io/client/static/js/3.abb6bd53.chunk.js.map",
-    "static/js/4.c5eb2da4.chunk.js": "https://wcpos.github.io/client/static/js/4.c5eb2da4.chunk.js",
-    "static/js/4.c5eb2da4.chunk.js.map": "https://wcpos.github.io/client/static/js/4.c5eb2da4.chunk.js.map",
+    "main.css": "https://wcpos.github.io/client/static/css/main.9f26bd45.css",
+    "main.js": "https://wcpos.github.io/client/static/js/main.2a1acd64.js",
+    "main.js.map": "https://wcpos.github.io/client/static/js/main.2a1acd64.js.map",
+    "static/js/1.be9aa808.chunk.js": "https://wcpos.github.io/client/static/js/1.be9aa808.chunk.js",
+    "static/js/1.be9aa808.chunk.js.map": "https://wcpos.github.io/client/static/js/1.be9aa808.chunk.js.map",
+    "static/js/2.ceacc0cb.chunk.js": "https://wcpos.github.io/client/static/js/2.ceacc0cb.chunk.js",
+    "static/js/2.ceacc0cb.chunk.js.map": "https://wcpos.github.io/client/static/js/2.ceacc0cb.chunk.js.map",
     "index.html": "https://wcpos.github.io/client/index.html",
-    "static/css/main.9f26bd45.chunk.css.map": "https://wcpos.github.io/client/static/css/main.9f26bd45.chunk.css.map",
-    "static/js/2.e19a928e.chunk.js.LICENSE.txt": "https://wcpos.github.io/client/static/js/2.e19a928e.chunk.js.LICENSE.txt"
+    "static/css/main.9f26bd45.css.map": "https://wcpos.github.io/client/static/css/main.9f26bd45.css.map",
+    "static/js/main.2a1acd64.js.LICENSE.txt": "https://wcpos.github.io/client/static/js/main.2a1acd64.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f25035d8.js",
-    "static/js/2.e19a928e.chunk.js",
-    "static/css/main.9f26bd45.chunk.css",
-    "static/js/main.a3e1a696.chunk.js"
+    "static/css/main.9f26bd45.css",
+    "static/js/main.2a1acd64.js"
   ]
 }
