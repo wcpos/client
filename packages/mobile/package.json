@@ -44,7 +44,7 @@
 		"react-native-screens": "3.7.2",
 		"react-native-sqlite-2": "3.4.1",
 		"react-native-svg": "12.1.1",
-		"react-native-unimodules": "^0.14.8",
+		"react-native-unimodules": "^0.14.9",
 		"react-native-webview": "11.13.0",
 		"rxdb": "10.0.3"
 	},
