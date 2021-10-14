@@ -10,7 +10,7 @@
 	},
 	"dependencies": {
 		"@storybook/addon-actions": "6.3.11",
-		"@storybook/addon-essentials": "6.3.11",
+		"@storybook/addon-essentials": "6.3.12",
 		"@storybook/addon-ondevice-actions": "5.3.23",
 		"@storybook/addon-ondevice-knobs": "5.3.25",
 		"@storybook/preset-create-react-app": "4.0.0",
