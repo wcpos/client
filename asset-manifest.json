@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "https://wcpos.github.io/client/static/css/main.45694437.css",
-    "main.js": "https://wcpos.github.io/client/static/js/main.2303f9be.js",
-    "main.js.map": "https://wcpos.github.io/client/static/js/main.2303f9be.js.map",
+    "main.js": "https://wcpos.github.io/client/static/js/main.5b7f7865.js",
+    "main.js.map": "https://wcpos.github.io/client/static/js/main.5b7f7865.js.map",
     "static/js/1.7201f0c0.chunk.js": "https://wcpos.github.io/client/static/js/1.7201f0c0.chunk.js",
     "static/js/1.7201f0c0.chunk.js.map": "https://wcpos.github.io/client/static/js/1.7201f0c0.chunk.js.map",
-    "static/js/2.7c6d5160.chunk.js": "https://wcpos.github.io/client/static/js/2.7c6d5160.chunk.js",
-    "static/js/2.7c6d5160.chunk.js.map": "https://wcpos.github.io/client/static/js/2.7c6d5160.chunk.js.map",
+    "static/js/2.85ef0e73.chunk.js": "https://wcpos.github.io/client/static/js/2.85ef0e73.chunk.js",
+    "static/js/2.85ef0e73.chunk.js.map": "https://wcpos.github.io/client/static/js/2.85ef0e73.chunk.js.map",
     "index.html": "https://wcpos.github.io/client/index.html",
     "static/css/main.45694437.css.map": "https://wcpos.github.io/client/static/css/main.45694437.css.map",
-    "static/js/main.2303f9be.js.LICENSE.txt": "https://wcpos.github.io/client/static/js/main.2303f9be.js.LICENSE.txt"
+    "static/js/main.5b7f7865.js.LICENSE.txt": "https://wcpos.github.io/client/static/js/main.5b7f7865.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/css/main.45694437.css",
-    "static/js/main.2303f9be.js"
+    "static/js/main.5b7f7865.js"
   ]
 }
