@@ -2449,6 +2449,11 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.10.1.tgz#728ecd95ab207aab8a9a4e421f0422db329232be"
   integrity sha512-HnUhk1Sy9IuKrxEMdIRCxpIqPw6BFsbYSEUO9p/hNw5sMld/+3OLMWQP80F8/db9qsv3qUjs7ZR5bS/R+iinXw==
 
+"@reach/observe-rect@^1.1.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@reach/observe-rect/-/observe-rect-1.2.0.tgz#d7a6013b8aafcc64c778a0ccb83355a11204d3b2"
+  integrity sha512-Ba7HmkFgfQxZqqaeIWWkNK0rEhpxVQHIoVyW1YDSkGsGIXzcaW4deC8B0pZrNSSyLTdIk7y+5olKt5+g0GmFIQ==
+
 "@reach/router@^1.2.1", "@reach/router@^1.3.4":
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/@reach/router/-/router-1.3.4.tgz#d2574b19370a70c80480ed91f3da840136d10f8c"
@@ -2938,10 +2943,10 @@
     lru_map "^0.3.3"
     tslib "^1.9.3"
 
-"@sentry/react-native@3.1.1":
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/@sentry/react-native/-/react-native-3.1.1.tgz#4edd555ff5a9eda292d067314282b2c1cb519512"
-  integrity sha512-w+KVlZ5pj0irI5vo1KhdPbr7EFT7bDeAENfckwYE+ogZWsEitokxvkPy7eqKZnbyQf3stlYACU96tRiwRLqiaA==
+"@sentry/react-native@3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@sentry/react-native/-/react-native-3.2.1.tgz#e7fa40a6aaeb786b36a40e8cc0b3267d94887da7"
+  integrity sha512-S9rVGppeYj8o0sTfAxgLPw8RTjaN2kqgCV4dw5N7e9fUtVL7OqGqYLr8OFXBNcF00lEhzNIDvRXUlGhmSF5Clg==
   dependencies:
     "@sentry/browser" "6.12.0"
     "@sentry/cli" "^1.68.0"
@@ -17716,10 +17721,10 @@ react-native-codegen@^0.0.7:
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
 
-react-native-device-info@8.4.2:
-  version "8.4.2"
-  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-8.4.2.tgz#9f7633de12173290ff1d8a8b8ba528d262597c70"
-  integrity sha512-T0XpHHyVzDn/u2OYYJbwtmaTWhgWwOUQE2xrW6G03I8+1XGnJeg2nMct47HeEEcdJKbYZkJ6nazwqVVIL8I1Vw==
+react-native-device-info@8.4.3:
+  version "8.4.3"
+  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-8.4.3.tgz#b2e9ade45867ae9526f1a54d0c83d33a24ac7680"
+  integrity sha512-1MOMBpLNjeaLEjL3lNAAmgisdcGekZJxNBp0F9OuA0EzBtH52mBLxFl+g7wyenVlibbUZIxngWDtlhVwLswoWQ==
 
 react-native-gesture-handler@1.10.3:
   version "1.10.3"
@@ -18079,6 +18084,13 @@ react-use-measure@2.0.4:
   integrity sha512-7K2HIGaPMl3Q9ZQiEVjen3tRXl4UDda8LiTPy/QxP8dP2rl5gPBhf7mMH6MVjjRNv3loU7sNzey/ycPNnHVTxQ==
   dependencies:
     debounce "^1.2.0"
+
+react-virtual@^2.8.2:
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/react-virtual/-/react-virtual-2.8.2.tgz#e204b30c57c426bd260ed1ac49f8b1099e92b7cb"
+  integrity sha512-CwnvF/3Jev4M14S9S7fgzGc0UFQ/bG/VXbrUCq+AB0zH8WGnVDTG0lQT7O3jPY76YLPzTHBu+AMl64Stp8+exg==
+  dependencies:
+    "@reach/observe-rect" "^1.1.0"
 
 react@17.0.2:
   version "17.0.2"
