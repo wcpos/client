@@ -35,7 +35,7 @@
 		"expo-haptics": "10.1.0",
 		"pouchdb-adapter-react-native-sqlite": "3.0.1",
 		"react-native": "0.66.1",
-		"react-native-device-info": "8.4.3",
+		"react-native-device-info": "8.4.5",
 		"react-native-gesture-handler": "1.10.3",
 		"react-native-get-random-values": "^1.7.0",
 		"react-native-linear-gradient": "2.5.6",
