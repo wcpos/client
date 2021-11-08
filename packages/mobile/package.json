@@ -28,7 +28,7 @@
 		"build:android:release": "cd android && ./gradlew assembleRelease"
 	},
 	"dependencies": {
-		"@react-native-community/netinfo": "6.0.6",
+		"@react-native-community/netinfo": "6.1.0",
 		"@sentry/react-native": "3.2.3",
 		"base-64": "1.0.0",
 		"events": "3.3.0",
