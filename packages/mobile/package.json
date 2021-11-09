@@ -28,7 +28,7 @@
 		"build:android:release": "cd android && ./gradlew assembleRelease"
 	},
 	"dependencies": {
-		"@react-native-community/netinfo": "6.0.6",
+		"@react-native-community/netinfo": "6.1.0",
 		"@sentry/react-native": "3.2.3",
 		"base-64": "1.0.0",
 		"events": "3.3.0",
@@ -46,10 +46,10 @@
 		"react-native-svg": "12.1.1",
 		"react-native-unimodules": "^0.14.10",
 		"react-native-webview": "11.14.2",
-		"rxdb": "10.3.4"
+		"rxdb": "10.3.5"
 	},
 	"devDependencies": {
-		"@types/react-native": "0.66.2",
+		"@types/react-native": "0.66.3",
 		"babel-plugin-transform-inline-environment-variables": "0.4.3",
 		"env-cmd": "10.1.0",
 		"metro-react-native-babel-preset": "0.66.2",
