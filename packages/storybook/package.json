@@ -9,7 +9,7 @@
 		"clean": "shx rm -rf dist && rm -rf node_modules"
 	},
 	"dependencies": {
-		"@storybook/addon-actions": "6.3.12",
+		"@storybook/addon-actions": "6.4.9",
 		"@storybook/addon-essentials": "6.3.12",
 		"@storybook/addon-ondevice-actions": "5.3.23",
 		"@storybook/addon-ondevice-knobs": "5.3.25",
