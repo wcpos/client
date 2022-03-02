@@ -30,7 +30,7 @@
 		"electron-builder": "22.13.1",
 		"electron-builder-notarize": "^1.2.0",
 		"env-cmd": "10.1.0",
-		"wait-on": "6.0.0"
+		"wait-on": "6.0.1"
 	},
 	"build": {
 		"appId": "com.wcpos.client",
