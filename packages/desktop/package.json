@@ -27,7 +27,7 @@
 		"concurrently": "6.3.0",
 		"copyfiles": "^2.4.1",
 		"electron": "15.3.1",
-		"electron-builder": "22.13.1",
+		"electron-builder": "23.0.3",
 		"electron-builder-notarize": "^1.2.0",
 		"env-cmd": "10.1.0",
 		"wait-on": "6.0.0"
