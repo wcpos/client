@@ -1,4 +1,6 @@
-# Client app for WooCommerce POS
+# Client app for WooCommerce POS 
+## *Archived in favour of [@wcpos/monorepo](https://github.com/wcpos/monorepo)*
+
 
 | Web | Desktop | iOS | Android | Community |
 |-----|---------|-----|---------|-----------|
